@@ -133,6 +133,17 @@ namespace Monster
             /*Compute xp-- This is based on level and the Xp gain is non-linear. Need to do something with Array indexing*/
             return xp;
         }
+        
+        /**
+         * Updates the hp of a monster and checks if it has died.
+         * @param hpChange the amount to modify the hp stat by. Negative if damage has been taken, positive if hp has been gained.
+         * return the return value of isDead() after updating hp.
+         */
+        public boolean updateHealth(int hpChange)
+        {
+            this.hp += hpChange;
+            return isDead();
+        }
 
         /**
          * Revives a monster to a certain hp-- can be modified in future to apply effects if required
