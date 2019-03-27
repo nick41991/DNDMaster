@@ -1,4 +1,14 @@
-﻿namespace WindowsFormsApp1
+/**
+ * @author Brent Kernohan
+ * 
+ * @description File designs the form to be implemented to make use of Form1_DieRoll.cs.
+ * 
+ *  @todo/bugs The Interface for the die roll simulation seems to be working fine 
+ * but refer to Form1_DieRoll.cs for specific details about the die roll subsystem
+ *
+ */
+
+namespace WindowsFormsApp1
 {
     partial class Form1
     {
