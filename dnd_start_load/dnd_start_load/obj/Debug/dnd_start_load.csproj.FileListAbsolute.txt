@@ -1,0 +1,11 @@
+C:\Users\black\Desktop\cs326DNDMaster-master\dnd_start_load\dnd_start_load\bin\Debug\dnd_start_load.exe.config
+C:\Users\black\Desktop\cs326DNDMaster-master\dnd_start_load\dnd_start_load\bin\Debug\dnd_start_load.exe
+C:\Users\black\Desktop\cs326DNDMaster-master\dnd_start_load\dnd_start_load\bin\Debug\dnd_start_load.pdb
+C:\Users\black\Desktop\cs326DNDMaster-master\dnd_start_load\dnd_start_load\obj\Debug\dnd_start_load.csprojAssemblyReference.cache
+C:\Users\black\Desktop\cs326DNDMaster-master\dnd_start_load\dnd_start_load\obj\Debug\dnd_start_load.Main.resources
+C:\Users\black\Desktop\cs326DNDMaster-master\dnd_start_load\dnd_start_load\obj\Debug\dnd_start_load.Properties.Resources.resources
+C:\Users\black\Desktop\cs326DNDMaster-master\dnd_start_load\dnd_start_load\obj\Debug\dnd_start_load.csproj.GenerateResource.cache
+C:\Users\black\Desktop\cs326DNDMaster-master\dnd_start_load\dnd_start_load\obj\Debug\dnd_start_load.csproj.CoreCompileInputs.cache
+C:\Users\black\Desktop\cs326DNDMaster-master\dnd_start_load\dnd_start_load\obj\Debug\dnd_start_load.exe
+C:\Users\black\Desktop\cs326DNDMaster-master\dnd_start_load\dnd_start_load\obj\Debug\dnd_start_load.pdb
+C:\Users\black\Desktop\cs326DNDMaster-master\dnd_start_load\dnd_start_load\obj\Debug\dnd_start_load.Form2.resources
