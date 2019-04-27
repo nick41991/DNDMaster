@@ -61,5 +61,10 @@ namespace dnd_start_load
         {
 
         }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
