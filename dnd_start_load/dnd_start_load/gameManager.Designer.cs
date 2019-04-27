@@ -36,11 +36,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,8 +45,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -69,14 +62,14 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label15 = new System.Windows.Forms.Label();
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel10.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -105,7 +98,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(158, 520);
+            this.label3.Location = new System.Drawing.Point(158, 420);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(228, 39);
             this.label3.TabIndex = 5;
@@ -116,7 +109,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(671, 520);
+            this.label4.Location = new System.Drawing.Point(671, 420);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(254, 39);
             this.label4.TabIndex = 5;
@@ -126,7 +119,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(438, 622);
+            this.button1.Location = new System.Drawing.Point(438, 522);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 36);
             this.button1.TabIndex = 6;
@@ -137,7 +130,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(956, 622);
+            this.button2.Location = new System.Drawing.Point(956, 522);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 36);
             this.button2.TabIndex = 6;
@@ -149,7 +142,7 @@
             // 
             this.comboBox1.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(158, 595);
+            this.comboBox1.Location = new System.Drawing.Point(158, 495);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(391, 27);
             this.comboBox1.TabIndex = 7;
@@ -159,59 +152,17 @@
             // 
             this.comboBox2.Font = new System.Drawing.Font("Bahnschrift", 12F);
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(676, 595);
+            this.comboBox2.Location = new System.Drawing.Point(676, 495);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(391, 27);
             this.comboBox2.TabIndex = 7;
             this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.panel3);
-            this.panel1.Location = new System.Drawing.Point(158, 510);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(391, 148);
-            this.panel1.TabIndex = 8;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Location = new System.Drawing.Point(158, 510);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(391, 148);
-            this.panel2.TabIndex = 8;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // panel3
-            // 
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(391, 148);
-            this.panel3.TabIndex = 8;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(391, 148);
-            this.panel4.TabIndex = 8;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // panel5
-            // 
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(391, 148);
-            this.panel5.TabIndex = 8;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
             // panel6
             // 
+            this.panel6.Controls.Add(this.panel1);
             this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(676, 510);
+            this.panel6.Location = new System.Drawing.Point(676, 410);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(391, 148);
             this.panel6.TabIndex = 8;
@@ -221,7 +172,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
-            this.label5.Location = new System.Drawing.Point(171, 570);
+            this.label5.Location = new System.Drawing.Point(171, 470);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(48, 23);
             this.label5.TabIndex = 9;
@@ -232,7 +183,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
-            this.label6.Location = new System.Drawing.Point(14, 60);
+            this.label6.Location = new System.Drawing.Point(13, 56);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 23);
             this.label6.TabIndex = 9;
@@ -270,10 +221,10 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
             this.label7.Location = new System.Drawing.Point(13, 135);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(92, 19);
+            this.label7.Size = new System.Drawing.Size(109, 23);
             this.label7.TabIndex = 9;
             this.label7.Text = "Player Initiative";
             this.label7.Click += new System.EventHandler(this.label5_Click);
@@ -281,46 +232,22 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
             this.label8.Location = new System.Drawing.Point(13, 62);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(76, 19);
+            this.label8.Size = new System.Drawing.Size(88, 23);
             this.label8.TabIndex = 9;
             this.label8.Text = "Player Name";
             this.label8.Click += new System.EventHandler(this.label5_Click);
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.label9);
-            this.panel8.Controls.Add(this.label10);
             this.panel8.Controls.Add(this.textBox3);
             this.panel8.Controls.Add(this.textBox4);
-            this.panel8.Location = new System.Drawing.Point(158, 41);
+            this.panel8.Location = new System.Drawing.Point(0, 0);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(391, 448);
             this.panel8.TabIndex = 11;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
-            this.label9.Location = new System.Drawing.Point(13, 62);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(88, 23);
-            this.label9.TabIndex = 9;
-            this.label9.Text = "Player Name";
-            this.label9.Click += new System.EventHandler(this.label5_Click);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
-            this.label10.Location = new System.Drawing.Point(13, 135);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(109, 23);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Player Initiative";
-            this.label10.Click += new System.EventHandler(this.label5_Click);
             // 
             // textBox3
             // 
@@ -344,6 +271,7 @@
             this.panel9.Controls.Add(this.label12);
             this.panel9.Controls.Add(this.textBox5);
             this.panel9.Controls.Add(this.textBox6);
+            this.panel9.Controls.Add(this.panel8);
             this.panel9.Location = new System.Drawing.Point(0, 0);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(391, 448);
@@ -457,7 +385,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(438, 453);
+            this.button3.Location = new System.Drawing.Point(438, 330);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(111, 36);
             this.button3.TabIndex = 12;
@@ -467,7 +395,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Bahnschrift", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(956, 453);
+            this.button4.Location = new System.Drawing.Point(956, 330);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(111, 36);
             this.button4.TabIndex = 13;
@@ -484,6 +412,24 @@
             this.button5.Text = "Select";
             this.button5.UseVisualStyleBackColor = true;
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Location = new System.Drawing.Point(-522, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(391, 223);
+            this.panel1.TabIndex = 10;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Bahnschrift Condensed", 14F);
+            this.label15.Location = new System.Drawing.Point(13, 56);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(48, 23);
+            this.label15.TabIndex = 9;
+            this.label15.Text = "Select";
+            // 
             // gameManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -495,8 +441,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
@@ -504,16 +448,10 @@
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
-            this.MaximumSize = new System.Drawing.Size(1224, 734);
-            this.MinimumSize = new System.Drawing.Size(1224, 734);
             this.Name = "gameManager";
-            this.Size = new System.Drawing.Size(1224, 734);
+            this.Size = new System.Drawing.Size(1091, 684);
             this.Load += new System.EventHandler(this.gameManager_Load);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -524,6 +462,8 @@
             this.panel9.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -538,11 +478,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
@@ -557,8 +492,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Panel panel10;
@@ -571,5 +504,7 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label15;
     }
 }
