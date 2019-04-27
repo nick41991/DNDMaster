@@ -16,7 +16,7 @@ namespace dnd_start_load
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Main());
+            Application.Run(new Form2());
         }
     }
 }
