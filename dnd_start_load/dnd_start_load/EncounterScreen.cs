@@ -107,14 +107,24 @@ namespace dnd_start_load
             Form2 form = (Form2)this.Parent;
             players = form.game.getPlayers();
             monsters = form.game.getMonsters();
-            int x = 300;
-            int y = 50;
+            int x = 105;
+            int y = 70;
 
             foreach (Monster n in monsters)
             {
-                place_button(x, y, "Monster_2", n);
-                x = x + 180;
+                
 
+                if (x + 180 <= 1015)
+                {
+                    x = x + 180;
+                }
+                else {
+
+                    x = 300;
+                    y = y + 125;
+                }
+
+                place_button(x, y, "Monster_2", n);
 
             }
             foreach (Button n in buttons)
