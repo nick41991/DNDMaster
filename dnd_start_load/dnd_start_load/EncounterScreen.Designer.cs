@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,14 +43,6 @@
             this.panel1.Size = new System.Drawing.Size(156, 734);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.OrangeRed;
-            this.panel2.Location = new System.Drawing.Point(608, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(155, 734);
-            this.panel2.TabIndex = 1;
-            // 
             // listView1
             // 
             this.listView1.Location = new System.Drawing.Point(0, 401);
@@ -58,6 +50,14 @@
             this.listView1.Size = new System.Drawing.Size(155, 27);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.OrangeRed;
+            this.panel2.Location = new System.Drawing.Point(869, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(155, 690);
+            this.panel2.TabIndex = 1;
             // 
             // EncounterScreen
             // 
@@ -67,7 +67,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "EncounterScreen";
-            this.Size = new System.Drawing.Size(1007, 653);
+            this.Size = new System.Drawing.Size(1024, 690);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
