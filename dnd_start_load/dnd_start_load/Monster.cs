@@ -110,7 +110,7 @@ namespace dnd_start_load
 
         public void getimg()
         {
-            return this.img;
+            return this.image;
         }
 
         public void setHp(int hp)
