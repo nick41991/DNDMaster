@@ -34,6 +34,8 @@
             this.updatebutton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.playerRotationDisplay = new System.Windows.Forms.TextBox();
+            this.updateTurnOrder = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // playernames
@@ -73,11 +75,11 @@
             // 
             // updatebutton
             // 
-            this.updatebutton.Location = new System.Drawing.Point(910, 0);
+            this.updatebutton.Location = new System.Drawing.Point(911, 577);
             this.updatebutton.Name = "updatebutton";
             this.updatebutton.Size = new System.Drawing.Size(97, 44);
             this.updatebutton.TabIndex = 4;
-            this.updatebutton.Text = "Update Players";
+            this.updatebutton.Text = "Update Characters";
             this.updatebutton.UseVisualStyleBackColor = true;
             this.updatebutton.Click += new System.EventHandler(this.updatebutton_Click);
             // 
@@ -104,11 +106,37 @@
             this.label2.Text = "Monster Stats";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // playerRotationDisplay
+            // 
+            this.playerRotationDisplay.BackColor = System.Drawing.Color.Black;
+            this.playerRotationDisplay.Font = new System.Drawing.Font("Bahnschrift", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerRotationDisplay.ForeColor = System.Drawing.Color.White;
+            this.playerRotationDisplay.Location = new System.Drawing.Point(276, 0);
+            this.playerRotationDisplay.Multiline = true;
+            this.playerRotationDisplay.Name = "playerRotationDisplay";
+            this.playerRotationDisplay.ReadOnly = true;
+            this.playerRotationDisplay.Size = new System.Drawing.Size(732, 68);
+            this.playerRotationDisplay.TabIndex = 7;
+            this.playerRotationDisplay.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.playerRotationDisplay.TextChanged += new System.EventHandler(this.playerRotationDisplay_TextChanged);
+            // 
+            // updateTurnOrder
+            // 
+            this.updateTurnOrder.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateTurnOrder.Location = new System.Drawing.Point(880, 1);
+            this.updateTurnOrder.Name = "updateTurnOrder";
+            this.updateTurnOrder.Size = new System.Drawing.Size(127, 65);
+            this.updateTurnOrder.TabIndex = 8;
+            this.updateTurnOrder.Text = "Advance Turn";
+            this.updateTurnOrder.UseVisualStyleBackColor = true;
+            // 
             // EncounterScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
+            this.Controls.Add(this.updateTurnOrder);
+            this.Controls.Add(this.playerRotationDisplay);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.updatebutton);
@@ -129,5 +157,7 @@
         private System.Windows.Forms.Button updatebutton;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox playerRotationDisplay;
+        private System.Windows.Forms.Button updateTurnOrder;
     }
 }
