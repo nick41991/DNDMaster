@@ -23,6 +23,7 @@ namespace dnd_start_load
 
         List<Character> turnOrder;
         int turnPosition;
+        string selectedMonster;
 
         List<Button> buttons = new List<Button>();
 
@@ -79,6 +80,7 @@ namespace dnd_start_load
         }
         public void button_opt(object s, EventArgs e, Monster monster)
         {
+            selectedMonster = monster.getName();
             textBox1.Text = null;
             textBox1.Text = monster.getName() + Environment.NewLine +"init:" + monster.getinit();
 
@@ -199,6 +201,20 @@ namespace dnd_start_load
                 turnPosition = 0;
             }
             playerRotationDisplay.Text = turnOrder.ElementAt(turnPosition).getName() + "'s Turn";
+        }
+
+        private void hpbutton_Click(object sender, EventArgs e)
+        {
+            Form2 form = (Form2)this.Parent;
+            
+            foreach (Monster m in form.game.getMonsters())
+            {
+                if (m.getName().Equals(selectedMonster))
+                {
+                    m.setHp(Convert.ToInt32(hpbox));
+                }
+                //draw_update();
+            }
         }
     }
 
