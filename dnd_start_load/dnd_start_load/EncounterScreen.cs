@@ -36,7 +36,7 @@ namespace dnd_start_load
             string curdir = AppDomain.CurrentDomain.BaseDirectory;
 
                 b.Name = title.getName();
-            
+                b.Text = title.getName();
 
             if (img_target != null)
             {
@@ -82,17 +82,24 @@ namespace dnd_start_load
         {
             selectedMonster = monster.getName();
             textBox1.Text = null;
-            textBox1.Text = monster.getName() + Environment.NewLine +"init:" + monster.getinit();
+            textBox1.Text = monster.getName() + Environment.NewLine + "Health: " + monster.getHp() + Environment.NewLine +"init:" + monster.getinit();
 
         }
         public void remove_button(String name) {
 
+            bool flag = false;
+            Button n = null;
+
             foreach (Button b in buttons)
             {
-                if (b.Name == name) {
+                if (b.Name.Equals(name)) {
 
-                    buttons.Remove(b);
+                    flag = true;
+                    n = b;
                 }
+            }
+            if (flag) {
+                buttons.Remove(n);
             }
         }
 
@@ -106,33 +113,7 @@ namespace dnd_start_load
         {
             Form2 form = (Form2)this.Parent;
             players = form.game.getPlayers();
-            monsters = form.game.getMonsters();
-            int x = 105;
-            int y = 70;
-
-            foreach (Monster n in monsters)
-            {
-                
-
-                if (x + 180 <= 1000)
-                {
-                    x = x + 180;
-                }
-                else {
-
-                    x = 285;
-                    y = y + 125;
-                }
-
-                place_button(x, y, "Monster_2", n);
-
-            }
-            foreach (Button n in buttons)
-            {
-
-                n.BringToFront();
-
-            }
+            draw_update();
 
             string s = "";
             foreach (Player p in players)
@@ -148,12 +129,56 @@ namespace dnd_start_load
             startbutton.Hide();
             updatebutton.Visible = true;
         }
+        public void draw_update() {
+
+            Form2 form = (Form2)this.Parent;
+            monsters = form.game.getMonsters();
+            int x = 105;
+            int y = 70;
+
+            foreach (Monster n in monsters)
+            {
+
+
+                if (x + 180 <= 1000)
+                {
+                    x = x + 180;
+                }
+                else
+                {
+
+                    x = 285;
+                    y = y + 125;
+                }
+
+                place_button(x, y, "Monster_2", n);
+
+            }
+            foreach (Button n in buttons)
+            {
+
+                n.BringToFront();
+
+            }
+
+
+
+
+
+
+        }
 
         private void updatebutton_Click(object sender, EventArgs e)
         {
            
             Form2 form = (Form2)this.Parent;
+            gameManager gm = new gameManager();
             players = form.game.getPlayers();
+            draw_update();
+            
+            remove_button("a");
+            form.game.deleteMonster("a");
+            draw_update();
 
             string s = "";
             foreach (Player p in players)
