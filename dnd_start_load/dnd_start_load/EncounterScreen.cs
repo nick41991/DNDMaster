@@ -114,13 +114,13 @@ namespace dnd_start_load
             {
                 
 
-                if (x + 180 <= 1015)
+                if (x + 180 <= 1000)
                 {
                     x = x + 180;
                 }
                 else {
 
-                    x = 300;
+                    x = 285;
                     y = y + 125;
                 }
 
