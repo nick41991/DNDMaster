@@ -327,6 +327,7 @@
             this.remove_m.TabIndex = 6;
             this.remove_m.Text = "Remove";
             this.remove_m.UseVisualStyleBackColor = true;
+            this.remove_m.Click += new System.EventHandler(this.remove_m_Click);
             // 
             // monsterdrop
             // 
@@ -335,6 +336,7 @@
             this.monsterdrop.Name = "monsterdrop";
             this.monsterdrop.Size = new System.Drawing.Size(357, 21);
             this.monsterdrop.TabIndex = 3;
+            this.monsterdrop.SelectedIndexChanged += new System.EventHandler(this.monsterdrop_SelectedIndexChanged);
             // 
             // label4
             // 
