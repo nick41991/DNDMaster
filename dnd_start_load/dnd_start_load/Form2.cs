@@ -13,14 +13,14 @@ using System.Windows.Forms;
 namespace dnd_start_load
 {
     
-
     public partial class Form2 : Form
     {
         int signal = 0;
+        public Game game;
 
         public Form2()
         {
-         
+            game = new Game();
             InitializeComponent();
         }
 
@@ -38,8 +38,6 @@ namespace dnd_start_load
         {
 
         }
-
-        
 
         private void button1_Click(object sender, EventArgs e) //Encounter Button
         {
