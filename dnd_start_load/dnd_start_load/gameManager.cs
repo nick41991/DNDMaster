@@ -66,5 +66,10 @@ namespace dnd_start_load
         {
 
         }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
