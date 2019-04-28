@@ -108,7 +108,7 @@ namespace dnd_start_load
             return name;
         }
 
-        public void getimg()
+        public string getimg()
         {
             return this.image;
         }
