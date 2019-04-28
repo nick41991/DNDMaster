@@ -20,6 +20,7 @@ namespace dnd_start_load
 
         public Form2()
         {
+         
             InitializeComponent();
         }
 
