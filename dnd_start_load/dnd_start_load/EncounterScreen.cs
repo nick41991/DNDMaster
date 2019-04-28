@@ -22,7 +22,7 @@ namespace dnd_start_load
 
         List<Button> buttons = new List<Button>();
 
-        public void place_button(int x, int y, String img_target)
+        public void place_button(int x, int y, String img_target, String title)
         {
 
             Point newLoc = new Point(x, y); // Set whatever you want for initial location
@@ -30,6 +30,9 @@ namespace dnd_start_load
             Button b = new Button();
             string curdir = AppDomain.CurrentDomain.BaseDirectory;
             int test_var = 10;
+
+                b.Name = title;
+            
 
             if (img_target != null)
             {
@@ -77,9 +80,20 @@ namespace dnd_start_load
         }
         public void button_opt(object s, EventArgs e, int i)
         {
+            textBox1.Text = null;
             textBox1.Text = "ahoy";
 
 
+        }
+        public void remove_button(String name) {
+
+            foreach (Button b in buttons)
+            {
+                if (b.Name == name) {
+
+                    buttons.Remove(b);
+                }
+            }
         }
 
 
@@ -96,7 +110,7 @@ namespace dnd_start_load
         {
             Form2 form = (Form2)this.Parent;
             players = form.game.getPlayers();
-            place_button(300, 50, "Monster_2");
+            place_button(300, 50, "Monster_2","jeff");
             foreach (Button n in buttons)
             {
 
