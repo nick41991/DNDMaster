@@ -9,6 +9,10 @@ namespace dnd_start_load
     public abstract class Character
     {
         public int init;
+        public String name;
+
         public abstract int getinit();
+        public abstract String getName();
+
     }
 }

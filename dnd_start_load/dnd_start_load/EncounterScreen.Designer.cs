@@ -129,6 +129,7 @@
             this.updateTurnOrder.TabIndex = 8;
             this.updateTurnOrder.Text = "Advance Turn";
             this.updateTurnOrder.UseVisualStyleBackColor = true;
+            this.updateTurnOrder.Click += new System.EventHandler(this.updateTurnOrder_Click);
             // 
             // EncounterScreen
             // 

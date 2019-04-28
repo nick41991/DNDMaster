@@ -103,7 +103,7 @@ namespace dnd_start_load
             this.name = name;
         }
 
-        public string getName()
+        public override string getName()
         {
             return name;
         }

@@ -37,7 +37,7 @@ namespace dnd_start_load
             setEffect(effect);
         }
 
-        public string getName()
+        public override string getName()
         {
             return this.name;
         }

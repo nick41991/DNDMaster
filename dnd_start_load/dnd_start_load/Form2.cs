@@ -20,8 +20,6 @@ namespace dnd_start_load
 
         List<Button> buttons = new List<Button>();
 
-
-
         public Form2()
         {
             game = new Game();
