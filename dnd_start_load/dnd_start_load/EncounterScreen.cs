@@ -36,6 +36,8 @@ namespace dnd_start_load
 
                 b.Name = title.getName();
                 b.Text = title.getName();
+            b.TextAlign = ContentAlignment.BottomLeft;
+            b.TextImageRelation = C;
 
             if (img_target != null)
             {
@@ -149,7 +151,7 @@ namespace dnd_start_load
                     y = y + 125;
                 }
 
-                place_button(x, y, "Monster_2", n);
+                place_button(x, y, "", n);
 
             }
             foreach (Button n in buttons)

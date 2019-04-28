@@ -75,7 +75,7 @@
             this.panel1.Controls.Add(this.monster_hp);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(731, 25);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(477, 363);
             this.panel1.TabIndex = 0;
@@ -96,7 +96,7 @@
             // monster_init
             // 
             this.monster_init.Location = new System.Drawing.Point(1, 207);
-            this.monster_init.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.monster_init.Margin = new System.Windows.Forms.Padding(4);
             this.monster_init.Name = "monster_init";
             this.monster_init.Size = new System.Drawing.Size(475, 22);
             this.monster_init.TabIndex = 8;
@@ -139,7 +139,7 @@
             // 
             this.monster_image.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.monster_image.Location = new System.Drawing.Point(12, 273);
-            this.monster_image.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.monster_image.Margin = new System.Windows.Forms.Padding(4);
             this.monster_image.Name = "monster_image";
             this.monster_image.Size = new System.Drawing.Size(112, 36);
             this.monster_image.TabIndex = 6;
@@ -150,7 +150,7 @@
             // 
             this.add_monster.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_monster.Location = new System.Drawing.Point(319, 316);
-            this.add_monster.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.add_monster.Margin = new System.Windows.Forms.Padding(4);
             this.add_monster.Name = "add_monster";
             this.add_monster.Size = new System.Drawing.Size(159, 47);
             this.add_monster.TabIndex = 5;
@@ -161,7 +161,7 @@
             // monster_name
             // 
             this.monster_name.Location = new System.Drawing.Point(1, 86);
-            this.monster_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.monster_name.Margin = new System.Windows.Forms.Padding(4);
             this.monster_name.Name = "monster_name";
             this.monster_name.Size = new System.Drawing.Size(475, 22);
             this.monster_name.TabIndex = 4;
@@ -169,7 +169,7 @@
             // monster_hp
             // 
             this.monster_hp.Location = new System.Drawing.Point(1, 146);
-            this.monster_hp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.monster_hp.Margin = new System.Windows.Forms.Padding(4);
             this.monster_hp.Name = "monster_hp";
             this.monster_hp.Size = new System.Drawing.Size(475, 22);
             this.monster_hp.TabIndex = 3;
@@ -194,7 +194,7 @@
             this.panel2.Controls.Add(this.player_name);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(131, 25);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(477, 363);
             this.panel2.TabIndex = 0;
@@ -228,7 +228,7 @@
             // 
             this.add_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.add_p.Location = new System.Drawing.Point(319, 316);
-            this.add_p.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.add_p.Margin = new System.Windows.Forms.Padding(4);
             this.add_p.Name = "add_p";
             this.add_p.Size = new System.Drawing.Size(159, 47);
             this.add_p.TabIndex = 4;
@@ -239,7 +239,7 @@
             // player_init
             // 
             this.player_init.Location = new System.Drawing.Point(1, 146);
-            this.player_init.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.player_init.Margin = new System.Windows.Forms.Padding(4);
             this.player_init.Name = "player_init";
             this.player_init.Size = new System.Drawing.Size(475, 22);
             this.player_init.TabIndex = 3;
@@ -247,7 +247,7 @@
             // player_name
             // 
             this.player_name.Location = new System.Drawing.Point(1, 86);
-            this.player_name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.player_name.Margin = new System.Windows.Forms.Padding(4);
             this.player_name.Name = "player_name";
             this.player_name.Size = new System.Drawing.Size(475, 22);
             this.player_name.TabIndex = 2;
@@ -271,7 +271,7 @@
             this.panel3.Controls.Add(this.playerdrop);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(131, 444);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(477, 230);
             this.panel3.TabIndex = 0;
@@ -292,7 +292,7 @@
             // 
             this.remove_p.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remove_p.Location = new System.Drawing.Point(319, 183);
-            this.remove_p.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.remove_p.Margin = new System.Windows.Forms.Padding(4);
             this.remove_p.Name = "remove_p";
             this.remove_p.Size = new System.Drawing.Size(159, 47);
             this.remove_p.TabIndex = 5;
@@ -305,7 +305,7 @@
             this.playerdrop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerdrop.FormattingEnabled = true;
             this.playerdrop.Location = new System.Drawing.Point(1, 97);
-            this.playerdrop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.playerdrop.Margin = new System.Windows.Forms.Padding(4);
             this.playerdrop.Name = "playerdrop";
             this.playerdrop.Size = new System.Drawing.Size(475, 37);
             this.playerdrop.TabIndex = 1;
@@ -328,7 +328,7 @@
             this.panel4.Controls.Add(this.monsterdrop);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(731, 444);
-            this.panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(477, 230);
             this.panel4.TabIndex = 0;
@@ -349,7 +349,7 @@
             // 
             this.remove_m.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.remove_m.Location = new System.Drawing.Point(319, 183);
-            this.remove_m.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.remove_m.Margin = new System.Windows.Forms.Padding(4);
             this.remove_m.Name = "remove_m";
             this.remove_m.Size = new System.Drawing.Size(159, 47);
             this.remove_m.TabIndex = 6;
@@ -362,7 +362,7 @@
             this.monsterdrop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.monsterdrop.FormattingEnabled = true;
             this.monsterdrop.Location = new System.Drawing.Point(1, 97);
-            this.monsterdrop.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.monsterdrop.Margin = new System.Windows.Forms.Padding(4);
             this.monsterdrop.Name = "monsterdrop";
             this.monsterdrop.Size = new System.Drawing.Size(475, 37);
             this.monsterdrop.TabIndex = 3;
@@ -387,7 +387,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "gameManager";
             this.Size = new System.Drawing.Size(1365, 849);
             this.Load += new System.EventHandler(this.gameManager_Load);
