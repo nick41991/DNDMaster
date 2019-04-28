@@ -93,6 +93,14 @@ namespace dnd_start_load
         {
             Form2 form = (Form2)this.Parent;
             players = form.game.getPlayers();
+            place_button(100, 340, "Monster_2");
+            foreach (Button n in buttons)
+            {
+
+                n.BringToFront();
+
+            }
+
 
             string s = "";
             foreach (Player p in players)
