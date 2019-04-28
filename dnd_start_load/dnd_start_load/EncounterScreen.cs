@@ -19,17 +19,21 @@ namespace dnd_start_load
 
         //Form2 form;
         List<Player> players;
+        List<Monster> monsters;
+
 
         List<Button> buttons = new List<Button>();
 
-        public void place_button(int x, int y, String img_target)
+        public void place_button(int x, int y, String img_target, Monster title)
         {
 
             Point newLoc = new Point(x, y); // Set whatever you want for initial location
             int same_loc_flag = 0;
             Button b = new Button();
             string curdir = AppDomain.CurrentDomain.BaseDirectory;
-            int test_var = 0;
+
+                b.Name = title.getName();
+            
 
             if (img_target != null)
             {
@@ -58,26 +62,35 @@ namespace dnd_start_load
 
             }
 
+
+            b.MouseClick += (sender, e) => button_opt(sender, e, title.getName());
             //Controls.Add(b);
             //*
             foreach (Button z in buttons)
             {
-                test_var = 300;
                 Controls.Add(z);
-                //z.Click += (sender, e) => button_opt(sender, e, test_var);
-                test_var = test_var + 300;
+               
                 z.Size = new Size(175, 125);
 
-
-                z.Name = "YO";
             }
             //*/
         }
-        public void button_opt(object s, EventArgs e, int i)
+        public void button_opt(object s, EventArgs e,String i)
         {
+            textBox1.Text = null;
+            textBox1.Text = i;
 
-            place_button(i + 10, i, "Monster_2");
 
+        }
+        public void remove_button(String name) {
+
+            foreach (Button b in buttons)
+            {
+                if (b.Name == name) {
+
+                    buttons.Remove(b);
+                }
+            }
         }
 
 
@@ -94,7 +107,17 @@ namespace dnd_start_load
         {
             Form2 form = (Form2)this.Parent;
             players = form.game.getPlayers();
-            place_button(100, 340, "Monster_2");
+            monsters = form.game.getMonsters();
+            int x = 300;
+            int y = 50;
+
+            foreach (Monster n in monsters)
+            {
+                place_button(x, y, "Monster_2", n);
+                x = x + 180;
+
+
+            }
             foreach (Button n in buttons)
             {
 
