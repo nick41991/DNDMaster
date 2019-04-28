@@ -124,10 +124,10 @@ namespace dnd_start_load
         private void remove_m_Click(object sender, EventArgs e)
         {
             Form2 form = (Form2)this.Parent;
-            EncounterScreen es = new EncounterScreen();
+           // EncounterScreen es = new EncounterScreen();
             form.game.deleteMonster(monsterdrop.Text);
             monsterdrop.Items.Remove(monsterdrop.Text);
-            es.remove_button(monsterdrop.Text);
+           // es.remove_button(monsterdrop.Text);
             monsterdrop.Text = "";
         }
     }

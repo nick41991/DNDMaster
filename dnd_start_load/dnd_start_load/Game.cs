@@ -95,7 +95,7 @@ namespace dnd_start_load
         public void deleteMonster(string name)
         {
             int i = 0;
-            for (i = 0; i < players.Count; i++)
+            for (i = 0; i < monsters.Count; i++)
             {
                 if (monsters[i].getName().Equals(name))      //checks that a monster exists with a specific name
                 {

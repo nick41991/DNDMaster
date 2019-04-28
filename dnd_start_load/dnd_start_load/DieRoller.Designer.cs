@@ -71,6 +71,7 @@ namespace dnd_start_load
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button1.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Gray;
             this.button1.Location = new System.Drawing.Point(1, 111);
             this.button1.Name = "button1";
@@ -86,6 +87,7 @@ namespace dnd_start_load
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button2.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Gray;
             this.button2.Location = new System.Drawing.Point(66, 111);
             this.button2.Name = "button2";
@@ -101,6 +103,7 @@ namespace dnd_start_load
             this.button3.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button3.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Gray;
             this.button3.Location = new System.Drawing.Point(131, 111);
             this.button3.Name = "button3";
@@ -116,6 +119,7 @@ namespace dnd_start_load
             this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button4.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Gray;
             this.button4.Location = new System.Drawing.Point(261, 176);
             this.button4.Name = "button4";
@@ -131,6 +135,7 @@ namespace dnd_start_load
             this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button5.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Gray;
             this.button5.Location = new System.Drawing.Point(1, 176);
             this.button5.Name = "button5";
@@ -146,6 +151,7 @@ namespace dnd_start_load
             this.button6.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button6.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button6.ForeColor = System.Drawing.Color.Gray;
             this.button6.Location = new System.Drawing.Point(66, 176);
             this.button6.Name = "button6";
@@ -161,6 +167,7 @@ namespace dnd_start_load
             this.button7.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button7.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.Gray;
             this.button7.Location = new System.Drawing.Point(131, 176);
             this.button7.Name = "button7";
@@ -176,6 +183,7 @@ namespace dnd_start_load
             this.button8.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button8.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.Gray;
             this.button8.Location = new System.Drawing.Point(196, 176);
             this.button8.Name = "button8";
@@ -191,6 +199,7 @@ namespace dnd_start_load
             this.button9.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button9.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.Gray;
             this.button9.Location = new System.Drawing.Point(1, 241);
             this.button9.Name = "button9";
@@ -206,6 +215,7 @@ namespace dnd_start_load
             this.button10.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button10.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button10.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.Gray;
             this.button10.Location = new System.Drawing.Point(66, 241);
             this.button10.Name = "button10";
@@ -221,6 +231,7 @@ namespace dnd_start_load
             this.button11.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button11.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button11.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button11.ForeColor = System.Drawing.Color.Gray;
             this.button11.Location = new System.Drawing.Point(131, 241);
             this.button11.Name = "button11";
@@ -236,6 +247,7 @@ namespace dnd_start_load
             this.button12.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button12.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button12.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button12.ForeColor = System.Drawing.Color.Gray;
             this.button12.Location = new System.Drawing.Point(261, 111);
             this.button12.Name = "button12";
@@ -251,6 +263,7 @@ namespace dnd_start_load
             this.button14.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button14.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button14.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ForeColor = System.Drawing.Color.Gray;
             this.button14.Location = new System.Drawing.Point(1, 306);
             this.button14.Name = "button14";
@@ -266,6 +279,7 @@ namespace dnd_start_load
             this.button16.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button16.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button16.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button16.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button16.ForeColor = System.Drawing.Color.Gray;
             this.button16.Location = new System.Drawing.Point(131, 306);
             this.button16.Name = "button16";
@@ -296,6 +310,7 @@ namespace dnd_start_load
             this.button13.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button13.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button13.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ForeColor = System.Drawing.Color.Gray;
             this.button13.Location = new System.Drawing.Point(196, 241);
             this.button13.Name = "button13";
@@ -311,6 +326,7 @@ namespace dnd_start_load
             this.button15.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button15.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button15.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.Color.Gray;
             this.button15.Location = new System.Drawing.Point(261, 241);
             this.button15.Name = "button15";
@@ -326,6 +342,7 @@ namespace dnd_start_load
             this.button17.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button17.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button17.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button17.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button17.ForeColor = System.Drawing.Color.Gray;
             this.button17.Location = new System.Drawing.Point(196, 306);
             this.button17.Name = "button17";
@@ -341,6 +358,7 @@ namespace dnd_start_load
             this.button18.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button18.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button18.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button18.ForeColor = System.Drawing.Color.Gray;
             this.button18.Location = new System.Drawing.Point(261, 306);
             this.button18.Name = "button18";
@@ -356,6 +374,7 @@ namespace dnd_start_load
             this.button19.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button19.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button19.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button19.ForeColor = System.Drawing.Color.Gray;
             this.button19.Location = new System.Drawing.Point(196, 46);
             this.button19.Name = "button19";
@@ -371,6 +390,7 @@ namespace dnd_start_load
             this.button20.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button20.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button20.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button20.ForeColor = System.Drawing.Color.Gray;
             this.button20.Location = new System.Drawing.Point(196, 111);
             this.button20.Name = "button20";
@@ -396,6 +416,7 @@ namespace dnd_start_load
             this.button24.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button24.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button24.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button24.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button24.ForeColor = System.Drawing.Color.Gray;
             this.button24.Location = new System.Drawing.Point(66, 46);
             this.button24.Name = "button24";
@@ -411,6 +432,7 @@ namespace dnd_start_load
             this.button21.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button21.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button21.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button21.ForeColor = System.Drawing.Color.Gray;
             this.button21.Location = new System.Drawing.Point(1, 46);
             this.button21.Name = "button21";
@@ -426,6 +448,7 @@ namespace dnd_start_load
             this.button22.FlatAppearance.BorderColor = System.Drawing.Color.Gray;
             this.button22.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent;
             this.button22.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button22.Font = new System.Drawing.Font("Bahnschrift", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button22.ForeColor = System.Drawing.Color.Gray;
             this.button22.Location = new System.Drawing.Point(131, 46);
             this.button22.Name = "button22";
@@ -471,6 +494,8 @@ namespace dnd_start_load
             this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Font = new System.Drawing.Font("Times New Roman", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(337, 441);
             this.Name = "DieRoller";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "D&D Die Roller";
