@@ -59,7 +59,13 @@ namespace dnd_start_load
         private void button1_Click(object sender, EventArgs e)
         {
             Form2 form = (Form2)this.Parent;
-            form.game.addPlayer(player_name.Text, player_init.Text);
+            
+            if (player_name.Text.Count() > 3)
+                form.game.addPlayer(player_name.Text, player_init.Text);
+            else
+            {
+                form.game.addPlayer(player_name.Text + " ", player_init.Text);
+            }
             playerdrop.Items.Add(player_name.Text);
             player_name.Clear();
             player_init.Clear();

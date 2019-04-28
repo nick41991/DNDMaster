@@ -65,7 +65,7 @@ namespace dnd_start_load
             }
 
 
-            b.MouseClick += (sender, e) => button_opt(sender, e, title.getName());
+            b.MouseClick += (sender, e) => button_opt(sender, e, title);
             //Controls.Add(b);
             //*
             foreach (Button z in buttons)
@@ -77,11 +77,10 @@ namespace dnd_start_load
             }
             //*/
         }
-        public void button_opt(object s, EventArgs e,String i)
+        public void button_opt(object s, EventArgs e, Monster monster)
         {
             textBox1.Text = null;
-            textBox1.Text = i;
-
+            textBox1.Text = monster.getName() + Environment.NewLine +"init:" + monster.getinit();
 
         }
         public void remove_button(String name) {
@@ -110,14 +109,24 @@ namespace dnd_start_load
             Form2 form = (Form2)this.Parent;
             players = form.game.getPlayers();
             monsters = form.game.getMonsters();
-            int x = 300;
-            int y = 50;
+            int x = 105;
+            int y = 70;
 
             foreach (Monster n in monsters)
             {
-                place_button(x, y, "Monster_2", n);
-                x = x + 180;
+                
 
+                if (x + 180 <= 1015)
+                {
+                    x = x + 180;
+                }
+                else {
+
+                    x = 300;
+                    y = y + 125;
+                }
+
+                place_button(x, y, "Monster_2", n);
 
             }
             foreach (Button n in buttons)
