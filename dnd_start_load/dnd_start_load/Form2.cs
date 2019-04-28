@@ -18,6 +18,10 @@ namespace dnd_start_load
         int signal = 0;
         public Game game;
 
+        List<Button> buttons = new List<Button>();
+
+
+
         public Form2()
         {
             game = new Game();
@@ -87,8 +91,12 @@ namespace dnd_start_load
 
         }
 
+        
+
+
         private void button_MouseClick(object sender, MouseEventArgs e)
         {
+
 
             if (signal == 1)
             {
@@ -96,6 +104,17 @@ namespace dnd_start_load
                 button5.ForeColor = System.Drawing.Color.Black;
                 button6.ForeColor = System.Drawing.Color.Black;
                 button7.ForeColor = System.Drawing.Color.Black;
+
+                // place_button(300, 150, "Monster_2");
+                
+                foreach (Button n in buttons)
+                {
+
+                    n.BringToFront();
+
+                }
+
+
 
             }
             if (signal == 5)
@@ -105,6 +124,14 @@ namespace dnd_start_load
                 button6.ForeColor = System.Drawing.Color.Black;
                 button7.ForeColor = System.Drawing.Color.Black;
 
+                //place_button(400, 150, "Monster_2");
+
+                foreach (Button n in buttons)
+                {
+
+                    n.SendToBack();
+
+                }
             }
             if (signal == 6)
             {
@@ -112,7 +139,12 @@ namespace dnd_start_load
                 button5.ForeColor = System.Drawing.Color.Black;
                 button6.ForeColor = System.Drawing.Color.Orange;
                 button7.ForeColor = System.Drawing.Color.Black;
+                foreach (Button n in buttons)
+                {
 
+                    n.SendToBack();
+
+                }
             }
             if (signal == 7)
             {
@@ -120,9 +152,15 @@ namespace dnd_start_load
                 button5.ForeColor = System.Drawing.Color.Black;
                 button6.ForeColor = System.Drawing.Color.Black;
                 button1.ForeColor = System.Drawing.Color.Black;
+                foreach (Button n in buttons)
+                {
 
+                    n.SendToBack();
+
+                }
             }
         }
+        
 
         private void gameManager1_Load(object sender, EventArgs e)
         {

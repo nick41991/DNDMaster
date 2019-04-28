@@ -38,20 +38,23 @@
             // 
             this.playernames.BackColor = System.Drawing.SystemColors.ControlLight;
             this.playernames.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.playernames.Location = new System.Drawing.Point(-2, 67);
+            this.playernames.Location = new System.Drawing.Point(-3, 82);
+            this.playernames.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.playernames.Multiline = true;
             this.playernames.Name = "playernames";
             this.playernames.ReadOnly = true;
             this.playernames.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.playernames.Size = new System.Drawing.Size(279, 553);
+            this.playernames.Size = new System.Drawing.Size(371, 680);
             this.playernames.TabIndex = 0;
+            this.playernames.TextChanged += new System.EventHandler(this.playernames_TextChanged);
             // 
             // startbutton
             // 
             this.startbutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.startbutton.Location = new System.Drawing.Point(582, 215);
+            this.startbutton.Location = new System.Drawing.Point(776, 265);
+            this.startbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.startbutton.Name = "startbutton";
-            this.startbutton.Size = new System.Drawing.Size(162, 46);
+            this.startbutton.Size = new System.Drawing.Size(216, 57);
             this.startbutton.TabIndex = 2;
             this.startbutton.Text = "Start";
             this.startbutton.UseVisualStyleBackColor = true;
@@ -62,17 +65,19 @@
             this.label1.BackColor = System.Drawing.Color.OrangeRed;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(-1, 0);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(278, 68);
+            this.label1.Size = new System.Drawing.Size(371, 84);
             this.label1.TabIndex = 3;
             this.label1.Text = "Players";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // updatebutton
             // 
-            this.updatebutton.Location = new System.Drawing.Point(910, 0);
+            this.updatebutton.Location = new System.Drawing.Point(1213, 0);
+            this.updatebutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.updatebutton.Name = "updatebutton";
-            this.updatebutton.Size = new System.Drawing.Size(97, 44);
+            this.updatebutton.Size = new System.Drawing.Size(129, 54);
             this.updatebutton.TabIndex = 4;
             this.updatebutton.Text = "Update Players";
             this.updatebutton.UseVisualStyleBackColor = true;
@@ -80,15 +85,16 @@
             // 
             // EncounterScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.Controls.Add(this.updatebutton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.startbutton);
             this.Controls.Add(this.playernames);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "EncounterScreen";
-            this.Size = new System.Drawing.Size(1007, 620);
+            this.Size = new System.Drawing.Size(1343, 763);
             this.ResumeLayout(false);
             this.PerformLayout();
 
