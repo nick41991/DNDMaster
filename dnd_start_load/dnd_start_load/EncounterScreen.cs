@@ -94,10 +94,6 @@ namespace dnd_start_load
             }
         }
 
-
-
-
-
         public EncounterScreen()
         {
             InitializeComponent();
