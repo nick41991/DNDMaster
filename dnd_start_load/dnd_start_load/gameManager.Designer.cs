@@ -277,13 +277,15 @@
             this.remove_p.TabIndex = 5;
             this.remove_p.Text = "Remove";
             this.remove_p.UseVisualStyleBackColor = true;
+            this.remove_p.Click += new System.EventHandler(this.remove_p_Click);
             // 
             // playerdrop
             // 
+            this.playerdrop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.playerdrop.FormattingEnabled = true;
             this.playerdrop.Location = new System.Drawing.Point(1, 79);
             this.playerdrop.Name = "playerdrop";
-            this.playerdrop.Size = new System.Drawing.Size(357, 21);
+            this.playerdrop.Size = new System.Drawing.Size(357, 32);
             this.playerdrop.TabIndex = 1;
             // 
             // label3
@@ -330,10 +332,11 @@
             // 
             // monsterdrop
             // 
+            this.monsterdrop.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.monsterdrop.FormattingEnabled = true;
             this.monsterdrop.Location = new System.Drawing.Point(1, 79);
             this.monsterdrop.Name = "monsterdrop";
-            this.monsterdrop.Size = new System.Drawing.Size(357, 21);
+            this.monsterdrop.Size = new System.Drawing.Size(357, 32);
             this.monsterdrop.TabIndex = 3;
             // 
             // label4

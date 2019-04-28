@@ -60,6 +60,7 @@ namespace dnd_start_load
         {
             Form2 form = (Form2)this.Parent;
             form.game.addPlayer(player_name.Text, player_init.Text);
+            playerdrop.Items.Add(player_name.Text);
             player_name.Clear();
             player_init.Clear();
         }
@@ -91,6 +92,13 @@ namespace dnd_start_load
             monster_name.Clear();
             monster_init.Clear();
             monster_hp.Clear();
+            
+           
+        }
+
+        private void remove_p_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }
