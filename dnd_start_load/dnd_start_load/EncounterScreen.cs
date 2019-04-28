@@ -35,7 +35,7 @@ namespace dnd_start_load
             string curdir = AppDomain.CurrentDomain.BaseDirectory;
 
                 b.Name = title.getName();
-            
+                b.Text = title.getName();
 
             if (img_target != null)
             {
