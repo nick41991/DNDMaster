@@ -58,7 +58,7 @@ namespace dnd_start_load
         {
             int i = 0;
             int c = 1;
-            for (i = 0; i < players.Count; i++)
+            for (i = 0; i < monsters.Count; i++)
             {
                 if (monsters[i].getName().Equals(monster.getName()))      //checks that a monster exists with a specific name
                 {
@@ -137,7 +137,7 @@ namespace dnd_start_load
             {
                 characters.Add(m);
             }
-            characters = characters.OrderBy(c => c.init).ToList();
+            characters = characters.OrderByDescending(c => c.init).ToList();
             return characters;
         }
 

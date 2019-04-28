@@ -21,6 +21,8 @@ namespace dnd_start_load
         List<Player> players;
         List<Monster> monsters;
 
+        List<Character> turnOrder;
+        int turnPosition;
 
         List<Button> buttons = new List<Button>();
 
@@ -125,12 +127,15 @@ namespace dnd_start_load
 
             }
 
-
             string s = "";
             foreach (Player p in players)
             {
                 s = String.Concat(s,"player: " + p.getName() + "\tinit: " + p.getinit() + Environment.NewLine + Environment.NewLine);
             }
+
+            turnOrder = form.game.generateTurnOrder();
+            turnPosition = 0;
+            playerRotationDisplay.Text = turnOrder.ElementAt(turnPosition).getName() + "'s Turn";
             
             playernames.Text = s;
             startbutton.Hide();
@@ -151,6 +156,19 @@ namespace dnd_start_load
 
             playernames.Text = s;
 
+            String cur = turnOrder.ElementAt(turnPosition).getName();
+            turnOrder = form.game.generateTurnOrder();
+            turnPosition = 0;
+            foreach(Character c in turnOrder) /*Dom't skip the player who's turn it is*/
+            {
+                if (cur.Equals(c.getName()))
+                {
+                    break;
+                }
+                turnPosition++;
+            }
+            playerRotationDisplay.Text = turnOrder.ElementAt(turnPosition).getName() + "'s Turn";
+
         }
 
         private void playernames_TextChanged(object sender, EventArgs e)
@@ -166,6 +184,16 @@ namespace dnd_start_load
         private void playerRotationDisplay_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void updateTurnOrder_Click(object sender, EventArgs e)
+        {
+            turnPosition++;
+            if(turnPosition >= turnOrder.Count)
+            {
+                turnPosition = 0;
+            }
+            playerRotationDisplay.Text = turnOrder.ElementAt(turnPosition).getName() + "'s Turn";
         }
     }
 
