@@ -34,7 +34,7 @@ namespace dnd_start_load
                 b.Name = title.getName();
                 b.Text = title.getName();
             b.TextAlign = ContentAlignment.BottomLeft;
-            b.TextImageRelation = C;
+            b.TextImageRelation = TextImageRelation.TextAboveImage;
 
             if (img_target != null)
             {
