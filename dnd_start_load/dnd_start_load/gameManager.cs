@@ -104,7 +104,7 @@ namespace dnd_start_load
             monster_name.Clear();
             monster_init.Clear();
             monster_hp.Clear();
-            monsterimg.Clear();
+            monsterimg.Text = "";
            
         }
 

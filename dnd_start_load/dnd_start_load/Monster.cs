@@ -108,6 +108,11 @@ namespace dnd_start_load
             return name;
         }
 
+        public void getimg()
+        {
+            return this.img;
+        }
+
         public void setHp(int hp)
         {
             this.hp = hp;
