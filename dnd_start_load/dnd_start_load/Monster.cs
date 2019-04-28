@@ -24,6 +24,20 @@ namespace dnd_start_load
             this.image = "";
         }
 
+        public Monster(string name, string init, string hp) //No image constructor
+        {
+            this.name = name;
+            if (!Int32.TryParse(init, out this.init))
+            {
+                //DIE ROLL
+            }
+            if (!Int32.TryParse(hp, out this.hp))
+            {
+                //DIE ROLL
+            }
+            this.image = "";
+        }
+
         public Monster(string name, string init, string hp, string img)
         {
             this.name = name;

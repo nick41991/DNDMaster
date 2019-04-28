@@ -83,5 +83,14 @@ namespace dnd_start_load
         {
 
         }
+
+        private void add_monster_Click(object sender, EventArgs e)
+        {
+            Form2 form = (Form2)this.Parent;
+            form.game.addMonster(new Monster(monster_name.Text, monster_init.Text, monster_hp.Text));
+            monster_name.Clear();
+            monster_init.Clear();
+            monster_hp.Clear();
+        }
     }
 }

@@ -148,6 +148,7 @@
             this.add_monster.TabIndex = 5;
             this.add_monster.Text = "Add";
             this.add_monster.UseVisualStyleBackColor = true;
+            this.add_monster.Click += new System.EventHandler(this.add_monster_Click);
             // 
             // monster_name
             // 
