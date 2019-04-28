@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.monster_init = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.monster_image = new System.Windows.Forms.Button();
+            this.add_monster = new System.Windows.Forms.Button();
+            this.monster_name = new System.Windows.Forms.TextBox();
+            this.monster_hp = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.add_p = new System.Windows.Forms.Button();
+            this.player_init = new System.Windows.Forms.TextBox();
+            this.player_name = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.remove_p = new System.Windows.Forms.Button();
+            this.playerdrop = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.remove_m = new System.Windows.Forms.Button();
+            this.monsterdrop = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -65,20 +65,38 @@
             // panel1
             // 
             this.panel1.Controls.Add(this.label12);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.monster_init);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.textBox4);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.monster_image);
+            this.panel1.Controls.Add(this.add_monster);
+            this.panel1.Controls.Add(this.monster_name);
+            this.panel1.Controls.Add(this.monster_hp);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Location = new System.Drawing.Point(548, 66);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(358, 295);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_2);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(4, 143);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(94, 23);
+            this.label12.TabIndex = 9;
+            this.label12.Text = "Inititiative";
+            this.label12.Click += new System.EventHandler(this.label12_Click);
+            // 
+            // monster_init
+            // 
+            this.monster_init.Location = new System.Drawing.Point(1, 168);
+            this.monster_init.Name = "monster_init";
+            this.monster_init.Size = new System.Drawing.Size(357, 20);
+            this.monster_init.TabIndex = 8;
             // 
             // label10
             // 
@@ -111,39 +129,39 @@
             this.label8.TabIndex = 7;
             this.label8.Text = "Monster Name";
             // 
-            // button5
+            // monster_image
             // 
-            this.button5.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(9, 222);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(84, 29);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Select";
-            this.button5.UseVisualStyleBackColor = true;
+            this.monster_image.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.monster_image.Location = new System.Drawing.Point(9, 222);
+            this.monster_image.Name = "monster_image";
+            this.monster_image.Size = new System.Drawing.Size(84, 29);
+            this.monster_image.TabIndex = 6;
+            this.monster_image.Text = "Select";
+            this.monster_image.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // add_monster
             // 
-            this.button3.Font = new System.Drawing.Font("Bahnschrift", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(239, 257);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(119, 38);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Add";
-            this.button3.UseVisualStyleBackColor = true;
+            this.add_monster.Font = new System.Drawing.Font("Bahnschrift", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_monster.Location = new System.Drawing.Point(239, 257);
+            this.add_monster.Name = "add_monster";
+            this.add_monster.Size = new System.Drawing.Size(119, 38);
+            this.add_monster.TabIndex = 5;
+            this.add_monster.Text = "Add";
+            this.add_monster.UseVisualStyleBackColor = true;
             // 
-            // textBox4
+            // monster_name
             // 
-            this.textBox4.Location = new System.Drawing.Point(1, 70);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(357, 20);
-            this.textBox4.TabIndex = 4;
+            this.monster_name.Location = new System.Drawing.Point(1, 70);
+            this.monster_name.Name = "monster_name";
+            this.monster_name.Size = new System.Drawing.Size(357, 20);
+            this.monster_name.TabIndex = 4;
             // 
-            // textBox3
+            // monster_hp
             // 
-            this.textBox3.Location = new System.Drawing.Point(1, 119);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(357, 20);
-            this.textBox3.TabIndex = 3;
+            this.monster_hp.Location = new System.Drawing.Point(1, 119);
+            this.monster_hp.Name = "monster_hp";
+            this.monster_hp.Size = new System.Drawing.Size(357, 20);
+            this.monster_hp.TabIndex = 3;
             // 
             // label2
             // 
@@ -159,9 +177,9 @@
             // 
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.add_p);
+            this.panel2.Controls.Add(this.player_init);
+            this.panel2.Controls.Add(this.player_name);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(98, 66);
             this.panel2.Name = "panel2";
@@ -191,30 +209,30 @@
             this.label5.Text = "Player Name";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // button1
+            // add_p
             // 
-            this.button1.Font = new System.Drawing.Font("Bahnschrift", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(239, 257);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 38);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.add_p.Font = new System.Drawing.Font("Bahnschrift", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.add_p.Location = new System.Drawing.Point(239, 257);
+            this.add_p.Name = "add_p";
+            this.add_p.Size = new System.Drawing.Size(119, 38);
+            this.add_p.TabIndex = 4;
+            this.add_p.Text = "Add";
+            this.add_p.UseVisualStyleBackColor = true;
+            this.add_p.Click += new System.EventHandler(this.button1_Click);
             // 
-            // textBox2
+            // player_init
             // 
-            this.textBox2.Location = new System.Drawing.Point(1, 119);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(357, 20);
-            this.textBox2.TabIndex = 3;
+            this.player_init.Location = new System.Drawing.Point(1, 119);
+            this.player_init.Name = "player_init";
+            this.player_init.Size = new System.Drawing.Size(357, 20);
+            this.player_init.TabIndex = 3;
             // 
-            // textBox1
+            // player_name
             // 
-            this.textBox1.Location = new System.Drawing.Point(1, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(357, 20);
-            this.textBox1.TabIndex = 2;
+            this.player_name.Location = new System.Drawing.Point(1, 70);
+            this.player_name.Name = "player_name";
+            this.player_name.Size = new System.Drawing.Size(357, 20);
+            this.player_name.TabIndex = 2;
             // 
             // label1
             // 
@@ -230,8 +248,8 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.label7);
-            this.panel3.Controls.Add(this.button2);
-            this.panel3.Controls.Add(this.comboBox1);
+            this.panel3.Controls.Add(this.remove_p);
+            this.panel3.Controls.Add(this.playerdrop);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(98, 412);
             this.panel3.Name = "panel3";
@@ -249,23 +267,23 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Player Name";
             // 
-            // button2
+            // remove_p
             // 
-            this.button2.Font = new System.Drawing.Font("Bahnschrift", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(239, 149);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 38);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Remove";
-            this.button2.UseVisualStyleBackColor = true;
+            this.remove_p.Font = new System.Drawing.Font("Bahnschrift", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remove_p.Location = new System.Drawing.Point(239, 149);
+            this.remove_p.Name = "remove_p";
+            this.remove_p.Size = new System.Drawing.Size(119, 38);
+            this.remove_p.TabIndex = 5;
+            this.remove_p.Text = "Remove";
+            this.remove_p.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // playerdrop
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(1, 79);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(357, 21);
-            this.comboBox1.TabIndex = 1;
+            this.playerdrop.FormattingEnabled = true;
+            this.playerdrop.Location = new System.Drawing.Point(1, 79);
+            this.playerdrop.Name = "playerdrop";
+            this.playerdrop.Size = new System.Drawing.Size(357, 21);
+            this.playerdrop.TabIndex = 1;
             // 
             // label3
             // 
@@ -280,8 +298,8 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.label11);
-            this.panel4.Controls.Add(this.button4);
-            this.panel4.Controls.Add(this.comboBox2);
+            this.panel4.Controls.Add(this.remove_m);
+            this.panel4.Controls.Add(this.monsterdrop);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(548, 412);
             this.panel4.Name = "panel4";
@@ -295,27 +313,27 @@
             this.label11.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(3, 53);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(117, 23);
+            this.label11.Size = new System.Drawing.Size(132, 23);
             this.label11.TabIndex = 7;
-            this.label11.Text = "Player Name";
+            this.label11.Text = "Monster Name";
             // 
-            // button4
+            // remove_m
             // 
-            this.button4.Font = new System.Drawing.Font("Bahnschrift", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(239, 149);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(119, 38);
-            this.button4.TabIndex = 6;
-            this.button4.Text = "Remove";
-            this.button4.UseVisualStyleBackColor = true;
+            this.remove_m.Font = new System.Drawing.Font("Bahnschrift", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.remove_m.Location = new System.Drawing.Point(239, 149);
+            this.remove_m.Name = "remove_m";
+            this.remove_m.Size = new System.Drawing.Size(119, 38);
+            this.remove_m.TabIndex = 6;
+            this.remove_m.Text = "Remove";
+            this.remove_m.UseVisualStyleBackColor = true;
             // 
-            // comboBox2
+            // monsterdrop
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(1, 79);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(357, 21);
-            this.comboBox2.TabIndex = 3;
+            this.monsterdrop.FormattingEnabled = true;
+            this.monsterdrop.Location = new System.Drawing.Point(1, 79);
+            this.monsterdrop.Name = "monsterdrop";
+            this.monsterdrop.Size = new System.Drawing.Size(357, 21);
+            this.monsterdrop.TabIndex = 3;
             // 
             // label4
             // 
@@ -326,24 +344,6 @@
             this.label4.Size = new System.Drawing.Size(254, 39);
             this.label4.TabIndex = 0;
             this.label4.Text = "Remove Monster";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(1, 168);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(357, 20);
-            this.textBox5.TabIndex = 8;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(4, 143);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(94, 23);
-            this.label12.TabIndex = 9;
-            this.label12.Text = "Inititiative";
-            this.label12.Click += new System.EventHandler(this.label12_Click);
             // 
             // gameManager
             // 
@@ -375,20 +375,20 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox monster_name;
+        private System.Windows.Forms.TextBox monster_hp;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button add_p;
+        private System.Windows.Forms.TextBox player_init;
+        private System.Windows.Forms.TextBox player_name;
+        private System.Windows.Forms.ComboBox playerdrop;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox monsterdrop;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button add_monster;
+        private System.Windows.Forms.Button remove_p;
+        private System.Windows.Forms.Button remove_m;
+        private System.Windows.Forms.Button monster_image;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label9;
@@ -397,6 +397,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox monster_init;
     }
 }
