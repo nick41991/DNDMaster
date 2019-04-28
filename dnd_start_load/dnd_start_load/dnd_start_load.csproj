@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
+    <Compile Include="EncounterScreen.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="EncounterScreen.Designer.cs">
+      <DependentUpon>EncounterScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
@@ -58,14 +58,35 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="gameManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="gameManager.Designer.cs">
+      <DependentUpon>gameManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="TreasureGenScreen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="TreasureGenScreen.Designer.cs">
+      <DependentUpon>TreasureGenScreen.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="EncounterScreen.resx">
+      <DependentUpon>EncounterScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="gameManager.resx">
+      <DependentUpon>gameManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\dnd_start_load.Form2.resources" />
+    <EmbeddedResource Include="obj\Debug\dnd_start_load.Main.resources" />
+    <EmbeddedResource Include="obj\Debug\dnd_start_load.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -75,6 +96,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TreasureGenScreen.resx">
+      <DependentUpon>TreasureGenScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\dnd_start_load.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\dnd_start_load.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\dnd_start_load.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\dnd_start_load.csprojAssemblyReference.cache" />
+    <None Include="obj\Release\dnd_start_load.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Release\dnd_start_load.csprojAssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -87,6 +119,17 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\dnd_start_load.exe" />
+    <Content Include="bin\Debug\dnd_start_load.pdb" />
+    <Content Include="obj\Debug\dnd_start_load.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\dnd_start_load.exe" />
+    <Content Include="obj\Debug\dnd_start_load.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
