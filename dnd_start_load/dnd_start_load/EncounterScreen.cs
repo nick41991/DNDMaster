@@ -29,7 +29,7 @@ namespace dnd_start_load
             int same_loc_flag = 0;
             Button b = new Button();
             string curdir = AppDomain.CurrentDomain.BaseDirectory;
-            int test_var = 0;
+            int test_var = 10;
 
             if (img_target != null)
             {
@@ -58,13 +58,15 @@ namespace dnd_start_load
 
             }
 
+            
+
             //Controls.Add(b);
             //*
             foreach (Button z in buttons)
             {
                 test_var = 300;
                 Controls.Add(z);
-                //z.Click += (sender, e) => button_opt(sender, e, test_var);
+                b.MouseClick += (sender, e) => button_opt(sender, e, test_var);
                 test_var = test_var + 300;
                 z.Size = new Size(175, 125);
 
@@ -75,8 +77,8 @@ namespace dnd_start_load
         }
         public void button_opt(object s, EventArgs e, int i)
         {
+            textBox1.Text = "ahoy";
 
-            place_button(i + 10, i, "Monster_2");
 
         }
 
@@ -94,7 +96,7 @@ namespace dnd_start_load
         {
             Form2 form = (Form2)this.Parent;
             players = form.game.getPlayers();
-            place_button(100, 340, "Monster_2");
+            place_button(300, 50, "Monster_2");
             foreach (Button n in buttons)
             {
 
