@@ -63,7 +63,7 @@ namespace dnd_start_load
             }
 
 
-            b.MouseClick += (sender, e) => button_opt(sender, e, title.getName());
+            b.MouseClick += (sender, e) => button_opt(sender, e, title);
             //Controls.Add(b);
             //*
             foreach (Button z in buttons)
@@ -75,11 +75,10 @@ namespace dnd_start_load
             }
             //*/
         }
-        public void button_opt(object s, EventArgs e,String i)
+        public void button_opt(object s, EventArgs e, Monster monster)
         {
             textBox1.Text = null;
-            textBox1.Text = i;
-
+            textBox1.Text = monster.getName() + Environment.NewLine +"init:" + monster.getinit();
 
         }
         public void remove_button(String name) {
