@@ -36,11 +36,12 @@ namespace dnd_start_load
             b.TextAlign = ContentAlignment.BottomLeft;
             b.TextImageRelation = TextImageRelation.TextAboveImage;
 
-            if (img_target != null)
+            if (img_target != "" || img_target != null)
             {
                 b.BackgroundImage = System.Drawing.Image.FromFile(curdir + "Images\\" + img_target + ".jpg");
                 b.BackgroundImageLayout = ImageLayout.Stretch;
             }
+            else { }
             b.Location = newLoc;
 
 
@@ -97,7 +98,7 @@ namespace dnd_start_load
                 }
             }
             if (flag) {
-                buttons.Remove(n);
+                n.Hide();
             }
         }
 
@@ -149,7 +150,7 @@ namespace dnd_start_load
                     y = y + 125;
                 }
 
-                place_button(x, y, "", n);
+                place_button(x, y, n.getimg(), n);
 
             }
             foreach (Button n in buttons)
@@ -241,6 +242,11 @@ namespace dnd_start_load
                 draw_update();
             }
 
+
+        }
+
+        private void EncounterScreen_Load(object sender, EventArgs e)
+        {
 
         }
     }
