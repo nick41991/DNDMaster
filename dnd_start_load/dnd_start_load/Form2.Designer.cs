@@ -35,11 +35,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.gameManager1 = new dnd_start_load.gameManager();
-            this.encounterScreen1 = new dnd_start_load.EncounterScreen();
-            this.treasureGenScreen1 = new dnd_start_load.TreasureGenScreen();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.encounterScreen1 = new dnd_start_load.EncounterScreen();
+            this.gameManager1 = new dnd_start_load.gameManager();
+            this.treasureGenScreen1 = new dnd_start_load.TreasureGenScreen();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -143,38 +143,11 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Dungeon Master Assistant";
             // 
-            // gameManager1
-            // 
-            this.gameManager1.Location = new System.Drawing.Point(268, 55);
-            this.gameManager1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.gameManager1.Name = "gameManager1";
-            this.gameManager1.Size = new System.Drawing.Size(1365, 849);
-            this.gameManager1.TabIndex = 3;
-            this.gameManager1.Load += new System.EventHandler(this.gameManager1_Load);
-            // 
-            // encounterScreen1
-            // 
-            this.encounterScreen1.BackColor = System.Drawing.Color.DimGray;
-            this.encounterScreen1.Location = new System.Drawing.Point(267, 54);
-            this.encounterScreen1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.encounterScreen1.Name = "encounterScreen1";
-            this.encounterScreen1.Size = new System.Drawing.Size(1343, 804);
-            this.encounterScreen1.TabIndex = 4;
-            this.encounterScreen1.Load += new System.EventHandler(this.encounterScreen1_Load);
-            // 
-            // treasureGenScreen1
-            // 
-            this.treasureGenScreen1.Location = new System.Drawing.Point(267, 54);
-            this.treasureGenScreen1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.treasureGenScreen1.Name = "treasureGenScreen1";
-            this.treasureGenScreen1.Size = new System.Drawing.Size(1365, 849);
-            this.treasureGenScreen1.TabIndex = 5;
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(267, 50);
+            this.panel3.Location = new System.Drawing.Point(267, 54);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1365, 808);
             this.panel3.TabIndex = 6;
@@ -188,6 +161,33 @@
             this.label2.Size = new System.Drawing.Size(255, 68);
             this.label2.TabIndex = 0;
             this.label2.Text = "Welcome";
+            // 
+            // encounterScreen1
+            // 
+            this.encounterScreen1.BackColor = System.Drawing.Color.DimGray;
+            this.encounterScreen1.Location = new System.Drawing.Point(267, 54);
+            this.encounterScreen1.Margin = new System.Windows.Forms.Padding(5);
+            this.encounterScreen1.Name = "encounterScreen1";
+            this.encounterScreen1.Size = new System.Drawing.Size(1343, 804);
+            this.encounterScreen1.TabIndex = 4;
+            this.encounterScreen1.Load += new System.EventHandler(this.encounterScreen1_Load);
+            // 
+            // gameManager1
+            // 
+            this.gameManager1.Location = new System.Drawing.Point(268, 55);
+            this.gameManager1.Margin = new System.Windows.Forms.Padding(5);
+            this.gameManager1.Name = "gameManager1";
+            this.gameManager1.Size = new System.Drawing.Size(1365, 849);
+            this.gameManager1.TabIndex = 3;
+            this.gameManager1.Load += new System.EventHandler(this.gameManager1_Load);
+            // 
+            // treasureGenScreen1
+            // 
+            this.treasureGenScreen1.Location = new System.Drawing.Point(267, 54);
+            this.treasureGenScreen1.Margin = new System.Windows.Forms.Padding(5);
+            this.treasureGenScreen1.Name = "treasureGenScreen1";
+            this.treasureGenScreen1.Size = new System.Drawing.Size(1365, 849);
+            this.treasureGenScreen1.TabIndex = 5;
             // 
             // Form2
             // 

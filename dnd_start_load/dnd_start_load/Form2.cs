@@ -38,10 +38,7 @@ namespace dnd_start_load
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            signal = 4;
-        }
+        
 
         private void button1_Click(object sender, EventArgs e) //Encounter Button
         {
@@ -71,7 +68,7 @@ namespace dnd_start_load
             signal = 6;
             //Need to check if die roller window is open and if not open new one, else bring to focus
             /* Possibly will work
-            if (Application.OpenForms.OfType<Form1_DieRoll>.Count() = 1)
+            if (Application.OpenForms.OfType<Form1_DieRoll>.Count() == 1)
             {
                 foreach (Form1_DieRoll roller in Application.OpenForms.OfType<Form1_DieRoll>) {
                     roller.WindowState = FormWindowState.Minimized;
