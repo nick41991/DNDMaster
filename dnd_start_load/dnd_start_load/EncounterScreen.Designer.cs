@@ -36,6 +36,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.playerRotationDisplay = new System.Windows.Forms.TextBox();
             this.updateTurnOrder = new System.Windows.Forms.Button();
+            this.hpbutton = new System.Windows.Forms.Button();
+            this.hpbox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // playernames
@@ -131,11 +133,30 @@
             this.updateTurnOrder.UseVisualStyleBackColor = true;
             this.updateTurnOrder.Click += new System.EventHandler(this.updateTurnOrder_Click);
             // 
+            // hpbutton
+            // 
+            this.hpbutton.Location = new System.Drawing.Point(130, 571);
+            this.hpbutton.Name = "hpbutton";
+            this.hpbutton.Size = new System.Drawing.Size(115, 46);
+            this.hpbutton.TabIndex = 9;
+            this.hpbutton.Text = "Change HP";
+            this.hpbutton.UseVisualStyleBackColor = true;
+            this.hpbutton.Click += new System.EventHandler(this.hpbutton_Click);
+            // 
+            // hpbox
+            // 
+            this.hpbox.Location = new System.Drawing.Point(14, 585);
+            this.hpbox.Name = "hpbox";
+            this.hpbox.Size = new System.Drawing.Size(100, 20);
+            this.hpbox.TabIndex = 10;
+            // 
             // EncounterScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
+            this.Controls.Add(this.hpbox);
+            this.Controls.Add(this.hpbutton);
             this.Controls.Add(this.updateTurnOrder);
             this.Controls.Add(this.playerRotationDisplay);
             this.Controls.Add(this.label2);
@@ -160,5 +181,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox playerRotationDisplay;
         private System.Windows.Forms.Button updateTurnOrder;
+        private System.Windows.Forms.Button hpbutton;
+        private System.Windows.Forms.TextBox hpbox;
     }
 }

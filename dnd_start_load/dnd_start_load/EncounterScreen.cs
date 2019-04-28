@@ -236,10 +236,14 @@ namespace dnd_start_load
             {
                 if (m.getName().Equals(selectedMonster))
                 {
-                    m.setHp(Convert.ToInt32(hpbox));
+                    m.setHp(Convert.ToInt32(hpbox.Text));
+                    textBox1.Text = m.getName() + Environment.NewLine + "Health: " + m.getHp() + Environment.NewLine + "init:" + m.getinit();
+                    break;
                 }
-                //draw_update();
+                draw_update();
             }
+
+
         }
     }
 
