@@ -99,7 +99,10 @@ namespace dnd_start_load
 
         private void remove_p_Click(object sender, EventArgs e)
         {
-            
+            Form2 form = (Form2)this.Parent;
+            form.game.deletePlayer(playerdrop.Text);
+            playerdrop.Items.Remove(playerdrop.Text);
+            playerdrop.Text = "";
         }
 
         private void monsterdrop_SelectedIndexChanged(object sender, EventArgs e)
