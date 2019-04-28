@@ -12,10 +12,10 @@ namespace dnd_start_load
      * 
      * @todo load game, save game, battle
      **/
-    class Game
+    public class Game
     {
-        private List<Player> players;
-        private List<Monster> monsters;
+        public List<Player> players;
+        public List<Monster> monsters;
 
         public Game()
         {

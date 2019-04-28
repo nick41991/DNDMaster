@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace dnd_start_load
 {
-    class Player : Character
+    public class Player : Character
     {
         private string name;
         private string effect;
