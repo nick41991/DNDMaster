@@ -146,7 +146,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Name = "TreasureGenScreen";
-            this.Size = new System.Drawing.Size(1024, 690);
+            this.Size = new System.Drawing.Size(1007, 620);
             this.Load += new System.EventHandler(this.TreasureGenScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

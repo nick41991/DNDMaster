@@ -39,7 +39,7 @@ namespace dnd_start_load
         /**
          * Add player to the menu
          * @param name
-         **/
+         
         public void addPlayer(string name)
         {
             this.players.Add(new Player(name));
@@ -49,7 +49,7 @@ namespace dnd_start_load
          * Add player during a battle with all values
          * @param name, init
          **/
-        public void addPlayeringame(string name, string init)
+        public void addPlayer(string name, string init)
         {
             this.players.Add(new Player(name, init));
         }

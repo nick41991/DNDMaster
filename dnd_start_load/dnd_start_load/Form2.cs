@@ -133,5 +133,10 @@ namespace dnd_start_load
         {
 
         }
+
+        private void encounterScreen2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

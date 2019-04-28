@@ -74,7 +74,7 @@
             this.panel1.Controls.Add(this.monster_name);
             this.panel1.Controls.Add(this.monster_hp);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(548, 66);
+            this.panel1.Location = new System.Drawing.Point(548, 20);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(358, 295);
             this.panel1.TabIndex = 0;
@@ -181,7 +181,7 @@
             this.panel2.Controls.Add(this.player_init);
             this.panel2.Controls.Add(this.player_name);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(98, 66);
+            this.panel2.Location = new System.Drawing.Point(98, 20);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(358, 295);
             this.panel2.TabIndex = 0;
@@ -251,7 +251,7 @@
             this.panel3.Controls.Add(this.remove_p);
             this.panel3.Controls.Add(this.playerdrop);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(98, 412);
+            this.panel3.Location = new System.Drawing.Point(98, 361);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(358, 187);
             this.panel3.TabIndex = 0;
@@ -301,7 +301,7 @@
             this.panel4.Controls.Add(this.remove_m);
             this.panel4.Controls.Add(this.monsterdrop);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(548, 412);
+            this.panel4.Location = new System.Drawing.Point(548, 361);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(358, 187);
             this.panel4.TabIndex = 0;

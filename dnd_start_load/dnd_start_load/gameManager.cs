@@ -12,10 +12,19 @@ namespace dnd_start_load
 {
     public partial class gameManager : UserControl
     {
+        //Form2 form;
         public gameManager()
         {
             InitializeComponent();
+            //form = (Form2)this.Parent;
         }
+
+       /* private void add_p_Click(object sender, EventArgs e)
+        {
+            form.game.addPlayer(player_name.Text, player_init.Text);
+            player_name.Clear();
+            player_init.Clear(); 
+        }*/
 
         private void gameManager_Load(object sender, EventArgs e)
         {
@@ -49,7 +58,10 @@ namespace dnd_start_load
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form2 form = (Form2)this.Parent;
+            form.game.addPlayer(player_name.Text, player_init.Text);
+            player_name.Clear();
+            player_init.Clear();
         }
 
         private void label6_Click(object sender, EventArgs e)
