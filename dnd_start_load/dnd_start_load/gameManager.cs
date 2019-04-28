@@ -89,6 +89,7 @@ namespace dnd_start_load
         {
             Form2 form = (Form2)this.Parent;
             form.game.addMonster(new Monster(monster_name.Text, monster_init.Text, monster_hp.Text));
+            monsterdrop.Items.Add(monster_name.Text);
             monster_name.Clear();
             monster_init.Clear();
             monster_hp.Clear();
@@ -98,7 +99,23 @@ namespace dnd_start_load
 
         private void remove_p_Click(object sender, EventArgs e)
         {
-            
+            Form2 form = (Form2)this.Parent;
+            form.game.deletePlayer(playerdrop.Text);
+            playerdrop.Items.Remove(playerdrop.Text);
+            playerdrop.Text = "";
+        }
+
+        private void monsterdrop_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void remove_m_Click(object sender, EventArgs e)
+        {
+            Form2 form = (Form2)this.Parent;
+            form.game.deleteMonster(monsterdrop.Text);
+            monsterdrop.Items.Remove(monsterdrop.Text);
+            monsterdrop.Text = "";
         }
     }
 }
