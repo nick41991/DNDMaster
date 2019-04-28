@@ -36,12 +36,17 @@ namespace dnd_start_load
             b.TextAlign = ContentAlignment.BottomLeft;
             b.TextImageRelation = TextImageRelation.TextAboveImage;
 
-            if (img_target != "" || img_target != null)
+            if (img_target != "" && img_target != null)
             {
                 b.BackgroundImage = System.Drawing.Image.FromFile(curdir + "Images\\" + img_target + ".jpg");
                 b.BackgroundImageLayout = ImageLayout.Stretch;
             }
-            else { }
+            else {
+
+                b.BackgroundImage = System.Drawing.Image.FromFile(curdir + "Images\\" + "Goblin" + ".jpg");
+                b.BackgroundImageLayout = ImageLayout.Stretch;
+
+            }
             b.Location = newLoc;
 
 
