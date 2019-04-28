@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,6 +18,7 @@ namespace dnd_start_load
     {
         int signal = 0;
         public Game game;
+        Thread dieRoller;
 
         List<Button> buttons = new List<Button>();
 
@@ -69,19 +71,29 @@ namespace dnd_start_load
             signal = 6;
             //Need to check if die roller window is open and if not open new one, else bring to focus
             /* Possibly will work
-            if (Application.OpenForms.OfType<Form1_DieRoll>.Count() == 1)
+            if (Application.OpenForms.OfType<DieRoller>.Count() == 1)
             {
-                foreach (Form1_DieRoll roller in Application.OpenForms.OfType<Form1_DieRoll>) {
+                /*foreach(DieRoller roller in Application.OpenForms.OfType<DieRoller>) {
                     roller.WindowState = FormWindowState.Minimized;
                     roller.Show();
                     roller.WindowState = FormWindowState.Normal;
-                }
+                }*/
 
+            // } else
+            // */
+            if (dieRoller != null && dieRoller.IsAlive)
+            {
+                dieRoller.Abort();
+                dieRoller = new Thread(() => new DieRoller().ShowDialog());
+                dieRoller.Start();
             } else
             {
-                Application.Run(new Form1_DieRoll);
+                dieRoller = new Thread(() => new DieRoller().ShowDialog());
+                dieRoller.Start();
             }
-            */
+
+            // }
+            /**/
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)

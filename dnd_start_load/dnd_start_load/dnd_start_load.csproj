@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Character.cs" />
+    <Compile Include="DieRoller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DieRoller.Designer.cs">
+      <DependentUpon>DieRoller.cs</DependentUpon>
+    </Compile>
     <Compile Include="EncounterScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -79,6 +85,9 @@
     <Compile Include="TreasureGenScreen.Designer.cs">
       <DependentUpon>TreasureGenScreen.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DieRoller.resx">
+      <DependentUpon>DieRoller.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EncounterScreen.resx">
       <DependentUpon>EncounterScreen.cs</DependentUpon>
     </EmbeddedResource>
