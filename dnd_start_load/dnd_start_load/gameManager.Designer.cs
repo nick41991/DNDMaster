@@ -34,7 +34,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.monster_image = new System.Windows.Forms.Button();
             this.add_monster = new System.Windows.Forms.Button();
             this.monster_name = new System.Windows.Forms.TextBox();
             this.monster_hp = new System.Windows.Forms.TextBox();
@@ -56,6 +55,7 @@
             this.remove_m = new System.Windows.Forms.Button();
             this.monsterdrop = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.monsterimg = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -64,12 +64,12 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.monsterimg);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.monster_init);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.monster_image);
             this.panel1.Controls.Add(this.add_monster);
             this.panel1.Controls.Add(this.monster_name);
             this.panel1.Controls.Add(this.monster_hp);
@@ -128,16 +128,6 @@
             this.label8.Size = new System.Drawing.Size(132, 23);
             this.label8.TabIndex = 7;
             this.label8.Text = "Monster Name";
-            // 
-            // monster_image
-            // 
-            this.monster_image.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.monster_image.Location = new System.Drawing.Point(9, 222);
-            this.monster_image.Name = "monster_image";
-            this.monster_image.Size = new System.Drawing.Size(84, 29);
-            this.monster_image.TabIndex = 6;
-            this.monster_image.Text = "Select";
-            this.monster_image.UseVisualStyleBackColor = true;
             // 
             // add_monster
             // 
@@ -351,6 +341,14 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Remove Monster";
             // 
+            // monsterimg
+            // 
+            this.monsterimg.FormattingEnabled = true;
+            this.monsterimg.Location = new System.Drawing.Point(1, 223);
+            this.monsterimg.Name = "monsterimg";
+            this.monsterimg.Size = new System.Drawing.Size(357, 21);
+            this.monsterimg.TabIndex = 10;
+            // 
             // gameManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -394,7 +392,6 @@
         private System.Windows.Forms.Button add_monster;
         private System.Windows.Forms.Button remove_p;
         private System.Windows.Forms.Button remove_m;
-        private System.Windows.Forms.Button monster_image;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label9;
@@ -404,5 +401,6 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox monster_init;
+        private System.Windows.Forms.ComboBox monsterimg;
     }
 }

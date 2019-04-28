@@ -13,9 +13,14 @@ namespace dnd_start_load
     public partial class gameManager : UserControl
     {
         //Form2 form;
+        String[] images = {"Bat", "Dark Knight", "Dragon", "Goblin", "Gross", "Knight", "ManDragon", "Ogre", "Orc", "Rat", "Satyr", "SeaDragonThing", "Skeleton", "Sword", "Troll", "Wolf", "Zombie"};
         public gameManager()
         {
             InitializeComponent();
+            foreach(string s in images)
+            {
+                monsterimg.Items.Add(s);
+            }
             //form = (Form2)this.Parent;
         }
 
@@ -94,12 +99,12 @@ namespace dnd_start_load
         private void add_monster_Click(object sender, EventArgs e)
         {
             Form2 form = (Form2)this.Parent;
-            form.game.addMonster(new Monster(monster_name.Text, monster_init.Text, monster_hp.Text));
+            form.game.addMonster(new Monster(monster_name.Text, monster_init.Text, monster_hp.Text, monsterimg.Text));
             monsterdrop.Items.Add(monster_name.Text);
             monster_name.Clear();
             monster_init.Clear();
             monster_hp.Clear();
-            
+            monsterimg.Clear();
            
         }
 

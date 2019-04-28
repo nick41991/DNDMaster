@@ -13,10 +13,6 @@ namespace dnd_start_load
     public partial class EncounterScreen : UserControl
     {
 
-
-
-
-
         //Form2 form;
         List<Player> players;
         List<Monster> monsters;
