@@ -33,7 +33,8 @@ namespace dnd_start_load
 
             if (img_target != null)
             {
-                b.Image = System.Drawing.Image.FromFile(curdir + "Images\\" + img_target + ".jpg");
+                b.BackgroundImage = System.Drawing.Image.FromFile(curdir + "Images\\" + img_target + ".jpg");
+                b.BackgroundImageLayout = ImageLayout.Stretch;
             }
             b.Location = newLoc;
 
