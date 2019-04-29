@@ -214,7 +214,6 @@ namespace dnd_start_load
                 remove_button(buttons.ElementAt(i).Name);
             }
                 draw_update();
-                draw_update();
 
             string s = "";
             foreach (Player p in players)
