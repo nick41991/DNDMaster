@@ -49,7 +49,7 @@ namespace dnd_start_load
 
             }
             b.Location = newLoc;
-
+           
 
             foreach (Button n in buttons)
             {
@@ -176,8 +176,14 @@ namespace dnd_start_load
                         x = 285;
                         y = y + 125;
                     }
+                    if (n.getHp() != 0){
+                        place_button(x, y, n.getimg(), n);
+                    }
+                    else {
 
-                    place_button(x, y, n.getimg(), n);
+                        place_button(x, y, "Death_screen", n);
+
+                    }
                 }
             }
             foreach (Button n in buttons)
@@ -277,6 +283,7 @@ namespace dnd_start_load
                 {
                     m.setHp(Convert.ToInt32(hpbox.Text));
                     textBox1.Text = m.getName() + Environment.NewLine + "Health: " + m.getHp() + Environment.NewLine + "init:" + m.getinit();
+                    updatebutton.PerformClick();
                     break;
                 }
                 draw_update();
