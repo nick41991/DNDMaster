@@ -23,6 +23,13 @@ namespace dnd_start_load
 
         List<Button> buttons = new List<Button>();
 
+        public EncounterScreen()
+        {
+            InitializeComponent();
+            updatebutton.Hide();
+            updateTurnOrder.Hide();
+        }
+
         public void place_button(int x, int y, String img_target, Monster title)
         {
 
@@ -129,20 +136,18 @@ namespace dnd_start_load
             //*/
         }
 
-        public EncounterScreen()
-        {
-            InitializeComponent();
-            updatebutton.Hide();
-        }
+        
 
         private void startbutton_Click(object sender, EventArgs e)
         {
+            
             Form2 form = (Form2)this.Parent;
             players = form.game.getPlayers();
             monsters = form.game.getMonsters();
             if (players.Count != 0 || monsters.Count != 0)
             {
-
+                updateTurnOrder.Visible = true;
+                resetbutton.Visible = true;
                 draw_update();
 
                 string s = "";
