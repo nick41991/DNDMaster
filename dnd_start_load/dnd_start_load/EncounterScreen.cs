@@ -174,7 +174,6 @@ namespace dnd_start_load
 
         private void updatebutton_Click(object sender, EventArgs e)
         {
-           
             Form2 form = (Form2)this.Parent;
             gameManager gm = new gameManager();
             players = form.game.getPlayers();
@@ -192,9 +191,12 @@ namespace dnd_start_load
 
             playernames.Text = s;
 
-            String cur = turnOrder.ElementAt(turnPosition).getName();
+            String cur = "";
+            if(turnPosition >= 0)
+                cur = turnOrder.ElementAt(turnPosition).getName();
+
             turnOrder = form.game.generateTurnOrder();
-            turnPosition = 0;
+            turnPosition = -1;
             foreach(Character c in turnOrder) /*Dom't skip the player who's turn it is*/
             {
                 if (cur.Equals(c.getName()))
@@ -203,7 +205,8 @@ namespace dnd_start_load
                 }
                 turnPosition++;
             }
-            playerRotationDisplay.Text = turnOrder.ElementAt(turnPosition).getName() + "'s Turn";
+            if(turnPosition >= 0)
+                playerRotationDisplay.Text = turnOrder.ElementAt(turnPosition).getName() + "'s Turn";
 
         }
 
@@ -229,7 +232,12 @@ namespace dnd_start_load
             {
                 turnPosition = 0;
             }
-            playerRotationDisplay.Text = turnOrder.ElementAt(turnPosition).getName() + "'s Turn";
+
+            if (turnOrder.Count <= 0)
+                turnPosition = -1;
+
+            if(turnPosition >= 0)
+                playerRotationDisplay.Text = turnOrder.ElementAt(turnPosition).getName() + "'s Turn";
         }
 
         private void hpbutton_Click(object sender, EventArgs e)
