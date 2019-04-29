@@ -27,7 +27,8 @@ namespace dnd_start_load
         {
 
             Point newLoc = new Point(x, y); // Set whatever you want for initial location
-            int same_loc_flag = 0;
+            bool same_loc_flag = true;
+            bool same_but_flag = true;
             Button b = new Button();
             string curdir = AppDomain.CurrentDomain.BaseDirectory;
 
@@ -56,19 +57,31 @@ namespace dnd_start_load
                 if (n.Location == b.Location)
                 {
 
-                    same_loc_flag = 1;
+                    same_loc_flag = false;
                     break;
                 }
 
             }
+            foreach (Button n in buttons)
+            {
 
-            if (same_loc_flag == 0)
+                if (n.Name == b.Name)
+                {
+
+                    same_but_flag = false;
+                   
+                    
+                }
+
+            }
+
+            if (same_loc_flag && same_but_flag)
             {
 
                 buttons.Add(b);
 
             }
-
+            
 
             b.MouseClick += (sender, e) => button_opt(sender, e, title);
             //Controls.Add(b);
@@ -91,24 +104,27 @@ namespace dnd_start_load
         }
         public void remove_button(String name) {
 
-            //bool flag = false;
-            //Button n = null;
-
-
+                 bool flag = false;
+                 Button n = null;
             foreach (Button b in buttons)
             {
 
                 if (b.Name.Equals(name))
                 {
 
-                    b.Hide();
-                    // flag = true;
-                    //n = b;
+                    //b.Hide();
+                    
+                     flag = true;
+                     n = b;
                 }
             }
-            /*
+            //*
             if (flag) {
-                n.Hide();
+
+                buttons.Remove(n);
+                this.Controls.Remove(n);
+
+
             }
             //*/
         }
@@ -181,12 +197,14 @@ namespace dnd_start_load
         private void updatebutton_Click(object sender, EventArgs e)
         {
             Form2 form = (Form2)this.Parent;
-            gameManager gm = new gameManager();
+           
             players = form.game.getPlayers();
             monsters = form.game.getMonsters();
-            draw_update();
+           draw_update();
             bool found = false;
-
+            String name = null;
+            int i = 0;
+            /*
             foreach (Button n in buttons) {
                 found = false;
                 foreach (Monster j in monsters) {
@@ -200,10 +218,16 @@ namespace dnd_start_load
                 }
                     if (!found)
                     {
-                    remove_button(n.Name);
+                    name = n.Name;
                 }
             }
-            draw_update();
+            //*/
+            for(i = 0;i< buttons.Count();i++)
+            {
+                remove_button(buttons.ElementAt(i).Name);
+            }
+                draw_update();
+                draw_update();
 
             string s = "";
             foreach (Player p in players)
@@ -277,11 +301,6 @@ namespace dnd_start_load
                 draw_update();
             }
 
-
-        }
-
-        private void EncounterScreen_Load(object sender, EventArgs e)
-        {
 
         }
     }
