@@ -286,6 +286,15 @@ namespace dnd_start_load
                 if (m.getName().Equals(selectedMonster))
                 {
                     m.setHp(Convert.ToInt32(hpbox.Text));
+
+                    if (m.getHp() == 0)
+                    {
+                        m.isdead = true;
+                    }
+                    else {
+                        m.isdead = false;
+                    }
+                      
                     textBox1.Text = m.getName() + Environment.NewLine + "Health: " + m.getHp() + Environment.NewLine + "init:" + m.getinit();
                     updatebutton.PerformClick();
                     break;

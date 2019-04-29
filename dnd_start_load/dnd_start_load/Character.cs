@@ -10,6 +10,7 @@ namespace dnd_start_load
     {
         public int init;
         public String name;
+        public bool isdead;
 
         public abstract int getinit();
         public abstract String getName();
