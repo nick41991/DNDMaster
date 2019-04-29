@@ -135,6 +135,7 @@ namespace dnd_start_load
             }
             foreach(Monster m in monsters)
             {
+                if(!m.isdead)
                 characters.Add(m);
             }
             characters = characters.OrderByDescending(c => c.init).ToList();
