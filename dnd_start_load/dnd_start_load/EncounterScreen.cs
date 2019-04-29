@@ -293,7 +293,9 @@ namespace dnd_start_load
                     }
                     else {
                         m.isdead = false;
+
                     }
+                    
                       
                     textBox1.Text = m.getName() + Environment.NewLine + "Health: " + m.getHp() + Environment.NewLine + "init:" + m.getinit();
                     updatebutton.PerformClick();
