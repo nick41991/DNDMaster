@@ -10,14 +10,12 @@ namespace dnd_start_load
     {
         private string name;
         private string effect;
-        public bool isdead;
 
         public Player(string name)
         {
             setName(name);
             setInit(0);
             setEffect("none");
-            this.isdead = false;
         }
 
         public Player(string name, string init)

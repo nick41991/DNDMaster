@@ -38,7 +38,6 @@
             this.updateTurnOrder = new System.Windows.Forms.Button();
             this.hpbutton = new System.Windows.Forms.Button();
             this.hpbox = new System.Windows.Forms.TextBox();
-            this.resetbutton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // playernames
@@ -151,22 +150,11 @@
             this.hpbox.Size = new System.Drawing.Size(100, 20);
             this.hpbox.TabIndex = 10;
             // 
-            // resetbutton
-            // 
-            this.resetbutton.Location = new System.Drawing.Point(808, 577);
-            this.resetbutton.Name = "resetbutton";
-            this.resetbutton.Size = new System.Drawing.Size(97, 44);
-            this.resetbutton.TabIndex = 11;
-            this.resetbutton.Text = "Reset Game";
-            this.resetbutton.UseVisualStyleBackColor = true;
-            this.resetbutton.Click += new System.EventHandler(this.resetbutton_Click);
-            // 
             // EncounterScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
-            this.Controls.Add(this.resetbutton);
             this.Controls.Add(this.hpbox);
             this.Controls.Add(this.hpbutton);
             this.Controls.Add(this.updateTurnOrder);
@@ -195,6 +183,5 @@
         private System.Windows.Forms.Button updateTurnOrder;
         private System.Windows.Forms.Button hpbutton;
         private System.Windows.Forms.TextBox hpbox;
-        private System.Windows.Forms.Button resetbutton;
     }
 }
