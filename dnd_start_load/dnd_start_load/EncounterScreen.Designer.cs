@@ -159,6 +159,7 @@
             this.resetbutton.TabIndex = 11;
             this.resetbutton.Text = "Reset Game";
             this.resetbutton.UseVisualStyleBackColor = true;
+            this.resetbutton.Click += new System.EventHandler(this.resetbutton_Click);
             // 
             // EncounterScreen
             // 
