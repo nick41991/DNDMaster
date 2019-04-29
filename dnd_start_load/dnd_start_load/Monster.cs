@@ -10,6 +10,7 @@ namespace dnd_start_load
     {
         private int hp;
         private string name;
+        private bool isdead;
         private string image; /*IDK how to do images yet so yeah but this will be for monster image, currently let's assume its a path to an image*/
 
         /**
@@ -22,6 +23,7 @@ namespace dnd_start_load
             this.init = 0;
             this.hp = 0;
             this.image = "";
+            this.isdead = false;
         }
 
         public Monster(string name, string init, string hp) //No image constructor

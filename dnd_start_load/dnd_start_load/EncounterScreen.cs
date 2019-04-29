@@ -14,14 +14,21 @@ namespace dnd_start_load
     {
 
         //Form2 form;
-        List<Player> players;
-        List<Monster> monsters;
+        List<Player> players = new List<Player>();
+        List<Monster> monsters = new List<Monster>();
 
         List<Character> turnOrder;
         int turnPosition;
         string selectedMonster;
 
         List<Button> buttons = new List<Button>();
+
+        public EncounterScreen()
+        {
+            InitializeComponent();
+            updatebutton.Hide();
+            updateTurnOrder.Hide();
+        }
 
         public void place_button(int x, int y, String img_target, Monster title)
         {
@@ -129,32 +136,36 @@ namespace dnd_start_load
             //*/
         }
 
-        public EncounterScreen()
-        {
-            InitializeComponent();
-            updatebutton.Hide();
-        }
+        
 
         private void startbutton_Click(object sender, EventArgs e)
         {
             Form2 form = (Form2)this.Parent;
+          
             players = form.game.getPlayers();
-            draw_update();
-
-            string s = "";
-            foreach (Player p in players)
+            monsters = form.game.getMonsters();
+            if (players.Count > 0 || monsters.Count > 0)
             {
-                s = String.Concat(s,"player: " + p.getName() + "\tinit: " + p.getinit() + Environment.NewLine + Environment.NewLine);
-            }
+                updateTurnOrder.Visible = true;
+               
+                draw_update();
 
-            turnOrder = form.game.generateTurnOrder();
-            turnPosition = 0;
-            playerRotationDisplay.Text = turnOrder.ElementAt(turnPosition).getName() + "'s Turn";
-            
-            playernames.Text = s;
-            startbutton.Hide();
-            updatebutton.Visible = true;
+                string s = "";
+                foreach (Player p in players)
+                {
+                    s = String.Concat(s, "player: " + p.getName() + "\tinit: " + p.getinit() + Environment.NewLine + Environment.NewLine);
+                }
+
+                turnOrder = form.game.generateTurnOrder();
+                turnPosition = 0;
+                playerRotationDisplay.Text = turnOrder.ElementAt(turnPosition).getName() + "'s Turn";
+
+                playernames.Text = s;
+                startbutton.Hide();
+                updatebutton.Visible = true;
+            }
         }
+
         public void draw_update() {
 
             Form2 form = (Form2)this.Parent;
@@ -200,28 +211,11 @@ namespace dnd_start_load
            
             players = form.game.getPlayers();
             monsters = form.game.getMonsters();
-           draw_update();
+            draw_update();
             bool found = false;
             String name = null;
             int i = 0;
-            /*
-            foreach (Button n in buttons) {
-                found = false;
-                foreach (Monster j in monsters) {
-
-                    if (n.Name.Equals(j.getName())) {
-                        found = true;
-                    }
-
-
-
-                }
-                    if (!found)
-                    {
-                    name = n.Name;
-                }
-            }
-            //*/
+           
             for(i = 0;i< buttons.Count();i++)
             {
                 remove_button(buttons.ElementAt(i).Name);
@@ -301,6 +295,28 @@ namespace dnd_start_load
                 draw_update();
             }
 
+
+        }
+
+        private void resetbutton_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            playernames.Text = "";
+            playerRotationDisplay.Text = "";
+            Form2 form = (Form2)this.Parent;
+            form.game.getPlayers().Clear();
+            form.game.getMonsters().Clear();
+            updatebutton.Hide();
+            updateTurnOrder.Hide();
+            startbutton.Visible = true;
+            int i = 0;
+
+            for (i = 0; i < buttons.Count(); i++)
+            {
+                this.Controls.Remove(buttons[i]);
+                buttons.RemoveAt(i);
+                //remove_button(buttons.ElementAt(i).Name);
+            }
 
         }
     }
