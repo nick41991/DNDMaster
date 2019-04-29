@@ -307,7 +307,9 @@ namespace dnd_start_load
 
         }
 
-        private void resetbutton_Click(object sender, EventArgs e)
+        
+
+        private void resetbutton_Click_1(object sender, EventArgs e)
         {
             textBox1.Text = "";
             playernames.Text = "";
@@ -317,15 +319,24 @@ namespace dnd_start_load
             startbutton.Visible = true;
             Form2 form = (Form2)this.Parent;
             int i = 0;
-            for (i = 0; i < buttons.Count(); i++)
+            /*if (buttons.Count > 0)
             {
                 
-                this.Controls.Remove(buttons[i]);
-                buttons.RemoveAt(i);
+               
+                    Button buttonToRemove = buttons[0];
+                    buttons.Remove(buttonToRemove);
+                    this.Controls.Remove(buttonToRemove);
+            
+
+               
+            }*/
+            //draw_update();
+            for (i = 0; i < buttons.Count(); i++)
+            {
+                remove_button(buttons.ElementAt(i).Name);
             }
             form.game.getPlayers().Clear();
             form.game.getMonsters().Clear();
-            //draw_update();
         }
     }
 
