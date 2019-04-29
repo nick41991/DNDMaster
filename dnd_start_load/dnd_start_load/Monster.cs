@@ -11,7 +11,7 @@ namespace dnd_start_load
         private int hp;
         private string name;
         private string image; /*IDK how to do images yet so yeah but this will be for monster image, currently let's assume its a path to an image*/
-
+        public bool isdead = false;
         /**
          * Default Constructor returns empty object
          * return empty monster

@@ -10,6 +10,7 @@ namespace dnd_start_load
     {
         private string name;
         private string effect;
+        public bool isdead = false;
 
         public Player(string name)
         {
