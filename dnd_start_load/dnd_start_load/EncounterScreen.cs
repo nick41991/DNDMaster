@@ -91,20 +91,26 @@ namespace dnd_start_load
         }
         public void remove_button(String name) {
 
-            bool flag = false;
-            Button n = null;
+            //bool flag = false;
+            //Button n = null;
+
 
             foreach (Button b in buttons)
             {
-                if (b.Name.Equals(name)) {
 
-                    flag = true;
-                    n = b;
+                if (b.Name.Equals(name))
+                {
+
+                    b.Hide();
+                    // flag = true;
+                    //n = b;
                 }
             }
+            /*
             if (flag) {
                 n.Hide();
             }
+            //*/
         }
 
         public EncounterScreen()
@@ -177,10 +183,26 @@ namespace dnd_start_load
             Form2 form = (Form2)this.Parent;
             gameManager gm = new gameManager();
             players = form.game.getPlayers();
+            monsters = form.game.getMonsters();
             draw_update();
-            
-            remove_button("a");
-            form.game.deleteMonster("a");
+            bool found = false;
+
+            foreach (Button n in buttons) {
+                found = false;
+                foreach (Monster j in monsters) {
+
+                    if (n.Name.Equals(j.getName())) {
+                        found = true;
+                    }
+
+
+
+                }
+                    if (!found)
+                    {
+                    remove_button(n.Name);
+                }
+            }
             draw_update();
 
             string s = "";
