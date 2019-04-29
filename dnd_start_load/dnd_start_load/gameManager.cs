@@ -13,7 +13,7 @@ namespace dnd_start_load
     public partial class gameManager : UserControl
     {
         //Form2 form;
-        String[] images = {"Bat", "Dark Knight", "Dragon", "Goblin", "Gross", "Knight", "ManDragon", "Ogre", "Orc", "Rat", "Satyr", "SeaDragonThing", "Skeleton", "Sword", "Troll", "Wolf", "Zombie"};
+        String[] images = {"Bat", "DarkKnight", "Dragon", "Goblin", "Gross", "Knight", "ManDragon", "Ogre", "Orc", "Rat", "Satyr", "SeaDragonThing", "Skeleton", "Sword", "Troll", "Wolf", "Zombie"};
         public gameManager()
         {
             InitializeComponent();
