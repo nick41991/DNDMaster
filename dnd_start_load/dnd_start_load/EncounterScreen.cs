@@ -139,21 +139,26 @@ namespace dnd_start_load
         {
             Form2 form = (Form2)this.Parent;
             players = form.game.getPlayers();
-            draw_update();
-
-            string s = "";
-            foreach (Player p in players)
+            monsters = form.game.getMonsters();
+            if (players.Count != 0 || monsters.Count != 0)
             {
-                s = String.Concat(s,"player: " + p.getName() + "\tinit: " + p.getinit() + Environment.NewLine + Environment.NewLine);
-            }
 
-            turnOrder = form.game.generateTurnOrder();
-            turnPosition = 0;
-            playerRotationDisplay.Text = turnOrder.ElementAt(turnPosition).getName() + "'s Turn";
-            
-            playernames.Text = s;
-            startbutton.Hide();
-            updatebutton.Visible = true;
+                draw_update();
+
+                string s = "";
+                foreach (Player p in players)
+                {
+                    s = String.Concat(s, "player: " + p.getName() + "\tinit: " + p.getinit() + Environment.NewLine + Environment.NewLine);
+                }
+
+                turnOrder = form.game.generateTurnOrder();
+                turnPosition = 0;
+                playerRotationDisplay.Text = turnOrder.ElementAt(turnPosition).getName() + "'s Turn";
+
+                playernames.Text = s;
+                startbutton.Hide();
+                updatebutton.Visible = true;
+            }
         }
         public void draw_update() {
 
@@ -289,6 +294,27 @@ namespace dnd_start_load
             }
 
 
+        }
+
+        private void resetbutton_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            playernames.Text = "";
+            playerRotationDisplay.Text = "";
+            updatebutton.Hide();
+            updateTurnOrder.Hide();
+            startbutton.Visible = true;
+            Form2 form = (Form2)this.Parent;
+            int i = 0;
+            for (i = 0; i < buttons.Count(); i++)
+            {
+                
+                this.Controls.Remove(buttons[i]);
+                buttons.RemoveAt(i);
+            }
+            form.game.getPlayers().Clear();
+            form.game.getMonsters().Clear();
+            //draw_update();
         }
     }
 
