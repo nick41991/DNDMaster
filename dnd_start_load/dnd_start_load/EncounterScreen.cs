@@ -165,20 +165,20 @@ namespace dnd_start_load
             foreach (Monster n in monsters)
             {
 
+                if (buttons.Count() < 16 ) {
+                    if (x + 180 <= 1000)
+                    {
+                        x = x + 180;
+                    }
+                    else
+                    {
 
-                if (x + 180 <= 1000)
-                {
-                    x = x + 180;
+                        x = 285;
+                        y = y + 125;
+                    }
+
+                    place_button(x, y, n.getimg(), n);
                 }
-                else
-                {
-
-                    x = 285;
-                    y = y + 125;
-                }
-
-                place_button(x, y, n.getimg(), n);
-
             }
             foreach (Button n in buttons)
             {
@@ -201,27 +201,8 @@ namespace dnd_start_load
             players = form.game.getPlayers();
             monsters = form.game.getMonsters();
            draw_update();
-            bool found = false;
-            String name = null;
             int i = 0;
-            /*
-            foreach (Button n in buttons) {
-                found = false;
-                foreach (Monster j in monsters) {
-
-                    if (n.Name.Equals(j.getName())) {
-                        found = true;
-                    }
-
-
-
-                }
-                    if (!found)
-                    {
-                    name = n.Name;
-                }
-            }
-            //*/
+            
             for(i = 0;i< buttons.Count();i++)
             {
                 remove_button(buttons.ElementAt(i).Name);
